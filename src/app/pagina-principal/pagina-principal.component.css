@@ -1,0 +1,19 @@
+.navbar {
+  position: fixed; /* Fija la barra de navegación */
+  top: 0;
+  width: 100%; /* Asegura que ocupe todo el ancho de la pantalla */
+  z-index: 1000; /* Se asegura de que quede por encima de otros elementos */
+}
+
+body {
+  margin-top: 80px; /* Ajusta el margen superior según la altura de la barra de navegación */
+}
+
+/* Para asegurarse de que el dropdown se vea cuando esté activo */
+.dropdown-content {
+  z-index: 1001; /* Se asegura de que el menú dropdown se vea encima de otros elementos */
+}
+
+.footer {
+  padding: 15px 0 0 65px;
+}

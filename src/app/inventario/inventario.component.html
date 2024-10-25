@@ -1,0 +1,2380 @@
+<div>
+  <div class="navbar bg-base-100">
+    <div class="navbar-start">
+      <div class="dropdown">
+        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h8m-8 6h16" />
+          </svg>
+        </div>
+      </div>
+      <div class="navbar-start">
+        <button class="join-item btn btn-outline text-xl" routerLink="" style="color: aliceblue;">Pagina anterior</button>
+      </div>
+    </div>
+    <a class="btn btn-ghost text-xl" routerLink="" style="color: aliceblue; font-style: oblique; margin-left: -100px;">Titanium Fitness</a>
+  </div>
+  <div style="margin: 60px 20px 0px 0px;">
+    <div>
+      <div class="relative p-4 w-full max-w-2xl h-full md:h-auto">
+          <div class="relative p-4 bg-white rounded-lg shadow dark:bg-gray-900 sm:p-5">
+              <div class="flex justify-between items-center pb-4 mb-4 rounded-t border-b sm:mb-5 dark:border-gray-600">
+                  <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+                      Agregar Producto
+                  </h3>
+              </div>
+              <form action="#">
+                  <div class="grid gap-4 mb-4 sm:grid-cols-2">
+                      <div class="sm:col-span-2">
+                        <label for="imagen" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Imagen Producto</label>
+                        <input id="imagen" class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400" type="file">
+                      </div>
+                      <div>
+                          <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nombre Producto</label>
+                          <input type="text" name="name" id="name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Type product name" required="">
+                      </div>
+                      <div>
+                          <label for="price" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Precio Producto</label>
+                          <input type="number" name="price" id="price" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="$2999" required="">
+                      </div>
+                      <div>
+                          <label for="Sucursal" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Sucursal</label>
+                          <select id="Sucursal" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
+                              <option selected="">Guatemala</option>
+                              <option value="TV">El Salvador</option>
+                              <option value="PC">Honduras</option>
+                          </select>
+                      </div>
+                      <div>
+                        <label for="tipo" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Tipo Producto</label>
+                        <select id="tipo" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
+                            <option selected="">Maquinas</option>
+                            <option value="TV">Pesas</option>
+                            <option value="PC">Mancuernas</option>
+                            <option value="PC">Protectores</option>
+                        </select>
+                    </div>
+                  </div>
+                  <button type="submit" class="text-white btn-ghost inline-flex items-center bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
+                      <svg class="mr-1 -ml-1 w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" clip-rule="evenodd"></path></svg>
+                      Añadir Producto
+                  </button>
+              </form>
+          </div>
+      </div>
+    </div>
+  </div>
+  <div style="text-align: center; margin-top: 20px; font-size: x-large; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: aliceblue;">PROTECTORES</div>
+  <div class="card card-compact bg-base-100 w-96 shadow-xl" style="margin: 20px 20px 10px 20px; border: 1px solid gray;">
+      <figure>
+      <img style="margin-top: 15px; width: 65%; height: 225px; object-fit: cover;"
+          src="https://fitness.com.gt/wp-content/uploads/2024/03/Guantes-con-Munequera-Meister-Gris-con-Verde-1.jpg"
+          alt="Bicicleta Spinning" />
+      </figure>
+      <div class="card-body">
+        <h2 class="card-title justify-center" style="color: aliceblue;">Par de Guantes</h2>
+        <h3 class="card-title justify-center" style="color: aliceblue; font-family: 'Courier New', Courier, monospace;">100</h3>
+      <div class="card-actions justify-center">
+        <input type="range" min="0" max="100" value="1" step="10" class="range range-xs [--range-shdw:aqua]" />
+        <div class="flex w-full justify-between px-2 text-md" style="margin-left: 1px;">
+          <span style="color: aliceblue;">|</span>
+          <div class="flex w-full justify-between px-1 text-md" style="margin-left: 21px;">
+            <span style="margin-left: 1px;" style="color: aliceblue;">|</span>
+            <span style="color: aliceblue;">|</span>
+            <span style="color: aliceblue;">|</span>
+            <span style="color: aliceblue;">|</span>
+            <span style="color: aliceblue;">|</span>
+            <span style="color: aliceblue;">|</span>
+            <span style="color: aliceblue;">|</span>
+            <span style="color: aliceblue;">|</span>
+            <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+            <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+          </div>
+          </div>
+        <div class="flex w-full justify-between px-2 text-ms">
+          <span style="color: aliceblue;">1</span>
+          <span style="color: aliceblue;">10</span>
+          <span style="color: aliceblue;">20</span>
+          <span style="color: aliceblue;">30</span>
+          <span style="color: aliceblue;">40</span>
+          <span style="color: aliceblue;">50</span>
+          <span style="color: aliceblue;">60</span>
+          <span style="color: aliceblue;">70</span>
+          <span style="color: aliceblue;">80</span>
+          <span style="color: aliceblue;">90</span>
+          <span style="color: aliceblue;">100</span>
+        </div>
+      </div>
+      <div class="card-actions justify-center">
+        <button class="btn btn-outline" style="color: aliceblue;">249.99 c/u<br>Click Para Comprar</button>
+      </div>
+      </div>
+  </div>
+  <div class="card card-compact bg-base-100 w-96 shadow-xl" style="margin: -490px auto; border: 1px solid gray;">
+    <figure>
+    <img style="margin-top: 15px; width: 65%; height: 225px; object-fit: cover;"
+        width="225px"
+        src="https://img.pacifiko.com/PROD/resize/1/500x500/ZjQxMzAzZW.jpg"
+        alt="pesas 20kg" />
+    </figure>
+    <div class="card-body">
+      <h2 class="card-title justify-center" style="color: aliceblue;">Cinturón de Levantamiento de Pesas</h2>
+      <h3 class="card-title justify-center" style="color: aliceblue; font-family: 'Courier New', Courier, monospace;">100</h3>
+      <div class="card-actions justify-center">
+        <input type="range" min="0" max="100" value="1" step="10" class="range range-xs [--range-shdw:aqua]" />
+        <div class="flex w-full justify-between px-2 text-md" style="margin-left: 1px;">
+          <span style="color: aliceblue;">|</span>
+          <div class="flex w-full justify-between px-1 text-md" style="margin-left: 21px;">
+            <span style="margin-left: 1px;" style="color: aliceblue;">|</span>
+            <span style="color: aliceblue;">|</span>
+            <span style="color: aliceblue;">|</span>
+            <span style="color: aliceblue;">|</span>
+            <span style="color: aliceblue;">|</span>
+            <span style="color: aliceblue;">|</span>
+            <span style="color: aliceblue;">|</span>
+            <span style="color: aliceblue;">|</span>
+            <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+            <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+          </div>
+          </div>
+        <div class="flex w-full justify-between px-2 text-ms">
+          <span style="color: aliceblue;">1</span>
+          <span style="color: aliceblue;">10</span>
+          <span style="color: aliceblue;">20</span>
+          <span style="color: aliceblue;">30</span>
+          <span style="color: aliceblue;">40</span>
+          <span style="color: aliceblue;">50</span>
+          <span style="color: aliceblue;">60</span>
+          <span style="color: aliceblue;">70</span>
+          <span style="color: aliceblue;">80</span>
+          <span style="color: aliceblue;">90</span>
+          <span style="color: aliceblue;">100</span>
+        </div>
+      </div>
+    <div class="card-actions justify-center">
+      <button class="btn btn-outline" style="color: aliceblue;">Q649.99 c/u<br>Click Para Comprar</button>
+    </div>
+    </div>
+</div>
+<div class="card card-compact bg-base-100 w-96 shadow-xl" style="margin: 9px 960px; border: 1px solid gray;">
+  <figure>
+  <img style="margin-top: 15px; width: 78%; height: 225px; object-fit: cover;"
+      width="225px"
+      src="https://fitness.com.gt/wp-content/uploads/2023/01/Rodilleras-de-Neopreno-Volxfit-Negras-de-7-mm-par-1.jpg"
+      alt="Bicicleta Spinning" />
+  </figure>
+  <div class="card-body">
+    <h2 class="card-title justify-center" style="color: aliceblue;">Par de Rodilleras</h2>
+    <h3 class="card-title justify-center" style="color: aliceblue; font-family: 'Courier New', Courier, monospace;">100</h3>
+    <div class="card-actions justify-center">
+      <input type="range" min="0" max="100" value="1" step="10" class="range range-xs [--range-shdw:aqua]" />
+      <div class="flex w-full justify-between px-2 text-md" style="margin-left: 1px;">
+        <span style="color: aliceblue;">|</span>
+        <div class="flex w-full justify-between px-1 text-md" style="margin-left: 21px;">
+          <span style="margin-left: 1px;" style="color: aliceblue;">|</span>
+          <span style="color: aliceblue;">|</span>
+          <span style="color: aliceblue;">|</span>
+          <span style="color: aliceblue;">|</span>
+          <span style="color: aliceblue;">|</span>
+          <span style="color: aliceblue;">|</span>
+          <span style="color: aliceblue;">|</span>
+          <span style="color: aliceblue;">|</span>
+          <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+          <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+        </div>
+        </div>
+      <div class="flex w-full justify-between px-2 text-ms">
+        <span style="color: aliceblue;">1</span>
+        <span style="color: aliceblue;">10</span>
+        <span style="color: aliceblue;">20</span>
+        <span style="color: aliceblue;">30</span>
+        <span style="color: aliceblue;">40</span>
+        <span style="color: aliceblue;">50</span>
+        <span style="color: aliceblue;">60</span>
+        <span style="color: aliceblue;">70</span>
+        <span style="color: aliceblue;">80</span>
+        <span style="color: aliceblue;">90</span>
+        <span style="color: aliceblue;">100</span>
+      </div>
+    </div>
+  <div class="card-actions justify-center">
+    <button class="btn btn-outline" style="color: aliceblue;">Q249.99 c/u<br>Click Para Comprar</button>
+  </div>
+  </div>
+</div>
+</div>
+
+
+<div class="card card-compact bg-base-100 w-96 shadow-xl" style="margin: 65px 20px 10px 20px; border: 1px solid gray;">
+  <figure>
+  <img style="margin-top: 15px; width: 65%; height: 225px; object-fit: cover;"
+      src="https://resources.sears.com.mx/medios-plazavip/mkt/630a4475a2d2e_1661551433268png.jpg?scale=500&qlty=75"
+      alt="Bicicleta Spinning" />
+  </figure>
+  <div class="card-body">
+    <h2 class="card-title justify-center" style="color: aliceblue;">Par de Coderas</h2>
+    <h3 class="card-title justify-center" style="color: aliceblue; font-family: 'Courier New', Courier, monospace;">100</h3>
+  <div class="card-actions justify-center">
+    <input type="range" min="0" max="100" value="1" step="10" class="range range-xs [--range-shdw:aqua]" />
+    <div class="flex w-full justify-between px-2 text-md" style="margin-left: 1px;">
+      <span style="color: aliceblue;">|</span>
+      <div class="flex w-full justify-between px-1 text-md" style="margin-left: 21px;">
+        <span style="margin-left: 1px;" style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+        <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+      </div>
+      </div>
+    <div class="flex w-full justify-between px-2 text-ms">
+      <span style="color: aliceblue;">1</span>
+      <span style="color: aliceblue;">10</span>
+      <span style="color: aliceblue;">20</span>
+      <span style="color: aliceblue;">30</span>
+      <span style="color: aliceblue;">40</span>
+      <span style="color: aliceblue;">50</span>
+      <span style="color: aliceblue;">60</span>
+      <span style="color: aliceblue;">70</span>
+      <span style="color: aliceblue;">80</span>
+      <span style="color: aliceblue;">90</span>
+      <span style="color: aliceblue;">100</span>
+    </div>
+  </div>
+  <div class="card-actions justify-center">
+    <button class="btn btn-outline" style="color: aliceblue;">Q139.99 c/u<br>Click Para Comprar</button>
+  </div>
+  </div>
+</div>
+<div class="card card-compact bg-base-100 w-96 shadow-xl" style="margin: -490px auto; border: 1px solid gray;">
+<figure>
+<img style="margin-top: 15px; width: 65%; height: 225px; object-fit: cover;"
+    width="225px"
+    src="https://fitbarz.com.gt/wp-content/uploads/STRAPS-DE-LEVANTAMIENTO-NEGROS-1.webp"
+    alt="pesas 20kg" />
+</figure>
+<div class="card-body">
+  <h2 class="card-title justify-center" style="color: aliceblue;">Correas de Levantamiento</h2>
+  <h3 class="card-title justify-center" style="color: aliceblue; font-family: 'Courier New', Courier, monospace;">100</h3>
+  <div class="card-actions justify-center">
+    <input type="range" min="0" max="100" value="1" step="10" class="range range-xs [--range-shdw:aqua]" />
+    <div class="flex w-full justify-between px-2 text-md" style="margin-left: 1px;">
+      <span style="color: aliceblue;">|</span>
+      <div class="flex w-full justify-between px-1 text-md" style="margin-left: 21px;">
+        <span style="margin-left: 1px;" style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+        <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+      </div>
+      </div>
+    <div class="flex w-full justify-between px-2 text-ms">
+      <span style="color: aliceblue;">1</span>
+      <span style="color: aliceblue;">10</span>
+      <span style="color: aliceblue;">20</span>
+      <span style="color: aliceblue;">30</span>
+      <span style="color: aliceblue;">40</span>
+      <span style="color: aliceblue;">50</span>
+      <span style="color: aliceblue;">60</span>
+      <span style="color: aliceblue;">70</span>
+      <span style="color: aliceblue;">80</span>
+      <span style="color: aliceblue;">90</span>
+      <span style="color: aliceblue;">100</span>
+    </div>
+  </div>
+<div class="card-actions justify-center">
+  <button class="btn btn-outline" style="color: aliceblue;">Q149.99 c/u<br>Click Para Comprar</button>
+</div>
+</div>
+</div>
+<div class="card card-compact bg-base-100 w-96 shadow-xl" style="margin: 9px 960px; border: 1px solid gray;">
+<figure>
+<img style="margin-top: 15px; width: 65%; height: 225px; object-fit: cover;"
+  width="225px"
+  src="https://sears.com.gt/wp-content/uploads/imgSears/322808.jpg"
+  alt="Bicicleta Spinning" />
+</figure>
+<div class="card-body">
+<h2 class="card-title justify-center" style="color: aliceblue;">Par de Muñequeras</h2>
+<h3 class="card-title justify-center" style="color: aliceblue; font-family: 'Courier New', Courier, monospace;">100</h3>
+<div class="card-actions justify-center">
+  <input type="range" min="0" max="100" value="1" step="10" class="range range-xs [--range-shdw:aqua]" />
+  <div class="flex w-full justify-between px-2 text-md" style="margin-left: 1px;">
+    <span style="color: aliceblue;">|</span>
+    <div class="flex w-full justify-between px-1 text-md" style="margin-left: 21px;">
+      <span style="margin-left: 1px;" style="color: aliceblue;">|</span>
+      <span style="color: aliceblue;">|</span>
+      <span style="color: aliceblue;">|</span>
+      <span style="color: aliceblue;">|</span>
+      <span style="color: aliceblue;">|</span>
+      <span style="color: aliceblue;">|</span>
+      <span style="color: aliceblue;">|</span>
+      <span style="color: aliceblue;">|</span>
+      <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+      <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+    </div>
+    </div>
+  <div class="flex w-full justify-between px-2 text-ms">
+    <span style="color: aliceblue;">1</span>
+    <span style="color: aliceblue;">10</span>
+    <span style="color: aliceblue;">20</span>
+    <span style="color: aliceblue;">30</span>
+    <span style="color: aliceblue;">40</span>
+    <span style="color: aliceblue;">50</span>
+    <span style="color: aliceblue;">60</span>
+    <span style="color: aliceblue;">70</span>
+    <span style="color: aliceblue;">80</span>
+    <span style="color: aliceblue;">90</span>
+    <span style="color: aliceblue;">100</span>
+  </div>
+</div>
+<div class="card-actions justify-center">
+<button class="btn btn-outline" style="color: aliceblue;">Q109.99 c/u<br>Click Para Comprar</button>
+</div>
+</div>
+</div>
+
+
+<div class="card card-compact bg-base-100 w-96 shadow-xl" style="margin: 65px 20px 10px 20px; border: 1px solid gray;">
+  <figure>
+  <img style="margin-top: 15px; width: 65%; height: 225px; object-fit: cover;"
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQK2ywlb1X3A6XQO5EC0nr-5DXkpSpRXX-rig&s"
+      alt="Bicicleta Spinning" />
+  </figure>
+  <div class="card-body">
+    <h2 class="card-title justify-center" style="color: aliceblue;">Protector Bucal</h2>
+    <h3 class="card-title justify-center" style="color: aliceblue; font-family: 'Courier New', Courier, monospace;">100</h3>
+  <div class="card-actions justify-center">
+    <input type="range" min="0" max="100" value="1" step="10" class="range range-xs [--range-shdw:aqua]" />
+    <div class="flex w-full justify-between px-2 text-md" style="margin-left: 1px;">
+      <span style="color: aliceblue;">|</span>
+      <div class="flex w-full justify-between px-1 text-md" style="margin-left: 21px;">
+        <span style="margin-left: 1px;" style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+        <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+      </div>
+      </div>
+    <div class="flex w-full justify-between px-2 text-ms">
+      <span style="color: aliceblue;">1</span>
+      <span style="color: aliceblue;">10</span>
+      <span style="color: aliceblue;">20</span>
+      <span style="color: aliceblue;">30</span>
+      <span style="color: aliceblue;">40</span>
+      <span style="color: aliceblue;">50</span>
+      <span style="color: aliceblue;">60</span>
+      <span style="color: aliceblue;">70</span>
+      <span style="color: aliceblue;">80</span>
+      <span style="color: aliceblue;">90</span>
+      <span style="color: aliceblue;">100</span>
+    </div>
+  </div>
+  <div class="card-actions justify-center">
+    <button class="btn btn-outline" style="color: aliceblue;">94.99 c/u<br>Click Para Comprar</button>
+  </div>
+  </div>
+</div>
+<div class="card card-compact bg-base-100 w-96 shadow-xl" style="margin: -490px auto; border: 1px solid gray;">
+<figure>
+<img style="margin-top: 15px; width: 65%; height: 225px; object-fit: cover;"
+    width="225px"
+    src="https://imagedelivery.net/4fYuQyy-r8_rpBpcY7lH_A/falabellaCL/125108455_01/w=800,h=800,fit=pad"
+    alt="pesas 20kg" />
+</figure>
+<div class="card-body">
+  <h2 class="card-title justify-center" style="color: aliceblue;">Par de Tobilleras</h2>
+  <h3 class="card-title justify-center" style="color: aliceblue; font-family: 'Courier New', Courier, monospace;">100</h3>
+  <div class="card-actions justify-center">
+    <input type="range" min="0" max="100" value="1" step="10" class="range range-xs [--range-shdw:aqua]" />
+    <div class="flex w-full justify-between px-2 text-md" style="margin-left: 1px;">
+      <span style="color: aliceblue;">|</span>
+      <div class="flex w-full justify-between px-1 text-md" style="margin-left: 21px;">
+        <span style="margin-left: 1px;" style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+        <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+      </div>
+      </div>
+    <div class="flex w-full justify-between px-2 text-ms">
+      <span style="color: aliceblue;">1</span>
+      <span style="color: aliceblue;">10</span>
+      <span style="color: aliceblue;">20</span>
+      <span style="color: aliceblue;">30</span>
+      <span style="color: aliceblue;">40</span>
+      <span style="color: aliceblue;">50</span>
+      <span style="color: aliceblue;">60</span>
+      <span style="color: aliceblue;">70</span>
+      <span style="color: aliceblue;">80</span>
+      <span style="color: aliceblue;">90</span>
+      <span style="color: aliceblue;">100</span>
+    </div>
+  </div>
+<div class="card-actions justify-center">
+  <button class="btn btn-outline" style="color: aliceblue;">Q109.99 c/u<br>Click Para Comprar</button>
+</div>
+</div>
+</div>
+<div class="card card-compact bg-base-100 w-96 shadow-xl" style="margin: 9px 960px; border: 1px solid gray;">
+<figure>
+<img style="margin-top: 15px; width: 65%; height: 225px; object-fit: cover;"
+  width="225px"
+  src="https://cemacogt.vtexassets.com/arquivos/ids/541099-800-800?v=638439119662370000&width=800&height=800&aspect=true"
+  alt="Bicicleta Spinning" />
+</figure>
+<div class="card-body">
+<h2 class="card-title justify-center" style="color: aliceblue;">Faja de Neopreno</h2>
+<h3 class="card-title justify-center" style="color: aliceblue; font-family: 'Courier New', Courier, monospace;">100</h3>
+<div class="card-actions justify-center">
+  <input type="range" min="0" max="100" value="1" step="10" class="range range-xs [--range-shdw:aqua]" />
+  <div class="flex w-full justify-between px-2 text-md" style="margin-left: 1px;">
+    <span style="color: aliceblue;">|</span>
+    <div class="flex w-full justify-between px-1 text-md" style="margin-left: 21px;">
+      <span style="margin-left: 1px;" style="color: aliceblue;">|</span>
+      <span style="color: aliceblue;">|</span>
+      <span style="color: aliceblue;">|</span>
+      <span style="color: aliceblue;">|</span>
+      <span style="color: aliceblue;">|</span>
+      <span style="color: aliceblue;">|</span>
+      <span style="color: aliceblue;">|</span>
+      <span style="color: aliceblue;">|</span>
+      <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+      <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+    </div>
+    </div>
+  <div class="flex w-full justify-between px-2 text-ms">
+    <span style="color: aliceblue;">1</span>
+    <span style="color: aliceblue;">10</span>
+    <span style="color: aliceblue;">20</span>
+    <span style="color: aliceblue;">30</span>
+    <span style="color: aliceblue;">40</span>
+    <span style="color: aliceblue;">50</span>
+    <span style="color: aliceblue;">60</span>
+    <span style="color: aliceblue;">70</span>
+    <span style="color: aliceblue;">80</span>
+    <span style="color: aliceblue;">90</span>
+    <span style="color: aliceblue;">100</span>
+  </div>
+</div>
+<div class="card-actions justify-center">
+<button class="btn btn-outline" style="color: aliceblue;">Q94.99 c/u<br>Click Para Comprar</button>
+</div>
+</div>
+</div>
+
+
+<div class="card card-compact bg-base-100 w-96 shadow-xl" style="margin: 65px 20px 10px 20px; border: 1px solid gray;">
+  <figure>
+  <img style="margin-top: 15px; width: 65%; height: 225px; object-fit: cover;"
+      src="https://fitness.com.gt/wp-content/uploads/2024/02/Casco-Para-Boxeo-Meister-Negro-con-Gris-1.jpg"
+      alt="Bicicleta Spinning" />
+  </figure>
+  <div class="card-body">
+    <h2 class="card-title justify-center" style="color: aliceblue;">Casco Protector</h2>
+    <h3 class="card-title justify-center" style="color: aliceblue; font-family: 'Courier New', Courier, monospace;">100</h3>
+  <div class="card-actions justify-center">
+    <input type="range" min="0" max="100" value="1" step="10" class="range range-xs [--range-shdw:aqua]" />
+    <div class="flex w-full justify-between px-2 text-md" style="margin-left: 1px;">
+      <span style="color: aliceblue;">|</span>
+      <div class="flex w-full justify-between px-1 text-md" style="margin-left: 21px;">
+        <span style="margin-left: 1px;" style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+        <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+      </div>
+      </div>
+    <div class="flex w-full justify-between px-2 text-ms">
+      <span style="color: aliceblue;">1</span>
+      <span style="color: aliceblue;">10</span>
+      <span style="color: aliceblue;">20</span>
+      <span style="color: aliceblue;">30</span>
+      <span style="color: aliceblue;">40</span>
+      <span style="color: aliceblue;">50</span>
+      <span style="color: aliceblue;">60</span>
+      <span style="color: aliceblue;">70</span>
+      <span style="color: aliceblue;">80</span>
+      <span style="color: aliceblue;">90</span>
+      <span style="color: aliceblue;">100</span>
+    </div>
+  </div>
+  <div class="card-actions justify-center">
+    <button class="btn btn-outline" style="color: aliceblue;">Q499.99 c/u<br>Click Para Comprar</button>
+  </div>
+  </div>
+</div>
+<div class="card card-compact bg-base-100 w-96 shadow-xl" style="margin: -490px auto; border: 1px solid gray;">
+<figure>
+<img style="margin-top: 15px; width: 65%; height: 225px; object-fit: cover;"
+    width="225px"
+    src="https://m.media-amazon.com/images/I/71pklmZjeGL._AC_UF894,1000_QL80_.jpg"
+    alt="pesas 20kg" />
+</figure>
+<div class="card-body">
+  <h2 class="card-title justify-center" style="color: aliceblue;">Chaleco de Pesas</h2>
+  <h3 class="card-title justify-center" style="color: aliceblue; font-family: 'Courier New', Courier, monospace;">100</h3>
+  <div class="card-actions justify-center">
+    <input type="range" min="0" max="100" value="1" step="10" class="range range-xs [--range-shdw:aqua]" />
+    <div class="flex w-full justify-between px-2 text-md" style="margin-left: 1px;">
+      <span style="color: aliceblue;">|</span>
+      <div class="flex w-full justify-between px-1 text-md" style="margin-left: 21px;">
+        <span style="margin-left: 1px;" style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+        <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+      </div>
+      </div>
+    <div class="flex w-full justify-between px-2 text-ms">
+      <span style="color: aliceblue;">1</span>
+      <span style="color: aliceblue;">10</span>
+      <span style="color: aliceblue;">20</span>
+      <span style="color: aliceblue;">30</span>
+      <span style="color: aliceblue;">40</span>
+      <span style="color: aliceblue;">50</span>
+      <span style="color: aliceblue;">60</span>
+      <span style="color: aliceblue;">70</span>
+      <span style="color: aliceblue;">80</span>
+      <span style="color: aliceblue;">90</span>
+      <span style="color: aliceblue;">100</span>
+    </div>
+  </div>
+<div class="card-actions justify-center">
+  <button class="btn btn-outline" style="color: aliceblue;">Q249.99 c/u<br>Click Para Comprar</button>
+</div>
+</div>
+</div>
+<div class="card card-compact bg-base-100 w-96 shadow-xl" style="margin: 9px 960px; border: 1px solid gray;">
+<figure>
+<img style="margin-top: 15px; width: 65%; height: 225px; object-fit: cover;"
+  width="225px"
+  src="https://tiendamarcial.com/arnobysinam/wp-content/uploads/2023/08/PRPP020-guantes-pies-protectores-taekwondo-wt-wtf-world-daedo-aprobados-korea-campeonatos-blancos-colombia-entrenamiento-arnoby-sinam.webp"
+  alt="Bicicleta Spinning" />
+</figure>
+<div class="card-body">
+<h2 class="card-title justify-center" style="color: aliceblue;">Par de Protector de Pies</h2>
+<h3 class="card-title justify-center" style="color: aliceblue; font-family: 'Courier New', Courier, monospace;">100</h3>
+<div class="card-actions justify-center">
+  <input type="range" min="0" max="100" value="1" step="10" class="range range-xs [--range-shdw:aqua]" />
+  <div class="flex w-full justify-between px-2 text-md" style="margin-left: 1px;">
+    <span style="color: aliceblue;">|</span>
+    <div class="flex w-full justify-between px-1 text-md" style="margin-left: 21px;">
+      <span style="margin-left: 1px;" style="color: aliceblue;">|</span>
+      <span style="color: aliceblue;">|</span>
+      <span style="color: aliceblue;">|</span>
+      <span style="color: aliceblue;">|</span>
+      <span style="color: aliceblue;">|</span>
+      <span style="color: aliceblue;">|</span>
+      <span style="color: aliceblue;">|</span>
+      <span style="color: aliceblue;">|</span>
+      <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+      <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+    </div>
+    </div>
+  <div class="flex w-full justify-between px-2 text-ms">
+    <span style="color: aliceblue;">1</span>
+    <span style="color: aliceblue;">10</span>
+    <span style="color: aliceblue;">20</span>
+    <span style="color: aliceblue;">30</span>
+    <span style="color: aliceblue;">40</span>
+    <span style="color: aliceblue;">50</span>
+    <span style="color: aliceblue;">60</span>
+    <span style="color: aliceblue;">70</span>
+    <span style="color: aliceblue;">80</span>
+    <span style="color: aliceblue;">90</span>
+    <span style="color: aliceblue;">100</span>
+  </div>
+</div>
+<div class="card-actions justify-center">
+<button class="btn btn-outline" style="color: aliceblue;">Q129.99 c/u<br>Click Para Comprar</button>
+</div>
+</div>
+</div>
+
+<div>
+  <div class="navbar bg-base-100">
+    <div class="navbar-start">
+      <div class="dropdown">
+        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h8m-8 6h16" />
+          </svg>
+        </div>
+      </div>
+      <div class="navbar-start">
+        <button class="join-item btn btn-outline text-xl" routerLink="" style="color: aliceblue;">Pagina anterior</button>
+      </div>
+    </div>
+    <a class="btn btn-ghost text-xl" routerLink="" style="color: aliceblue; font-style: oblique; margin-left: -100px;">Titanium Fitness</a>
+  </div>
+  <div style="text-align: center; margin-top: 20px; font-size: x-large; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: aliceblue;">MANCUERNAS</div>
+  <div class="card card-compact bg-base-100 w-96 shadow-xl" style="margin: 20px 20px 10px 20px; border: 1px solid gray;">
+      <figure>
+      <img style="margin-top: 15px; width: 65%; height: 225px; object-fit: cover;"
+          src="https://fitbarz.com.gt/wp-content/uploads/KIT-44LBS-2-min.jpg"
+          alt="Bicicleta Spinning" />
+      </figure>
+      <div class="card-body">
+        <h2 class="card-title justify-center" style="color: aliceblue;">Mancuernas Ajustables</h2>
+        <h3 class="card-title justify-center" style="color: aliceblue; font-family: 'Courier New', Courier, monospace;">100</h3>
+      <div class="card-actions justify-center">
+        <input type="range" min="0" max="100" value="1" step="10" class="range range-xs [--range-shdw:aqua]" />
+        <div class="flex w-full justify-between px-2 text-md" style="margin-left: 1px;">
+          <span style="color: aliceblue;">|</span>
+          <div class="flex w-full justify-between px-1 text-md" style="margin-left: 21px;">
+            <span style="margin-left: 1px;" style="color: aliceblue;">|</span>
+            <span style="color: aliceblue;">|</span>
+            <span style="color: aliceblue;">|</span>
+            <span style="color: aliceblue;">|</span>
+            <span style="color: aliceblue;">|</span>
+            <span style="color: aliceblue;">|</span>
+            <span style="color: aliceblue;">|</span>
+            <span style="color: aliceblue;">|</span>
+            <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+            <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+          </div>
+          </div>
+        <div class="flex w-full justify-between px-2 text-ms">
+          <span style="color: aliceblue;">1</span>
+          <span style="color: aliceblue;">10</span>
+          <span style="color: aliceblue;">20</span>
+          <span style="color: aliceblue;">30</span>
+          <span style="color: aliceblue;">40</span>
+          <span style="color: aliceblue;">50</span>
+          <span style="color: aliceblue;">60</span>
+          <span style="color: aliceblue;">70</span>
+          <span style="color: aliceblue;">80</span>
+          <span style="color: aliceblue;">90</span>
+          <span style="color: aliceblue;">100</span>
+        </div>
+      </div>
+      <div class="card-actions justify-center">
+        <button class="btn btn-outline" style="color: aliceblue;">Q149.99 c/u<br>Click Para Comprar</button>
+      </div>
+      </div>
+  </div>
+  <div class="card card-compact bg-base-100 w-96 shadow-xl" style="margin: -490px auto; border: 1px solid gray;">
+    <figure>
+    <img style="margin-top: 15px; width: 65%; height: 225px; object-fit: cover;"
+        width="225px"
+        src="https://sears.com.gt/wp-content/uploads/imgSears/236722.jpg"
+        alt="pesas 20kg" />
+    </figure>
+    <div class="card-body">
+      <h2 class="card-title justify-center" style="color: aliceblue;">Mancuernas hexagonales</h2>
+      <h3 class="card-title justify-center" style="color: aliceblue; font-family: 'Courier New', Courier, monospace;">100</h3>
+      <div class="card-actions justify-center">
+        <input type="range" min="0" max="100" value="1" step="10" class="range range-xs [--range-shdw:aqua]" />
+        <div class="flex w-full justify-between px-2 text-md" style="margin-left: 1px;">
+          <span style="color: aliceblue;">|</span>
+          <div class="flex w-full justify-between px-1 text-md" style="margin-left: 21px;">
+            <span style="margin-left: 1px;" style="color: aliceblue;">|</span>
+            <span style="color: aliceblue;">|</span>
+            <span style="color: aliceblue;">|</span>
+            <span style="color: aliceblue;">|</span>
+            <span style="color: aliceblue;">|</span>
+            <span style="color: aliceblue;">|</span>
+            <span style="color: aliceblue;">|</span>
+            <span style="color: aliceblue;">|</span>
+            <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+            <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+          </div>
+          </div>
+        <div class="flex w-full justify-between px-2 text-ms">
+          <span style="color: aliceblue;">1</span>
+          <span style="color: aliceblue;">10</span>
+          <span style="color: aliceblue;">20</span>
+          <span style="color: aliceblue;">30</span>
+          <span style="color: aliceblue;">40</span>
+          <span style="color: aliceblue;">50</span>
+          <span style="color: aliceblue;">60</span>
+          <span style="color: aliceblue;">70</span>
+          <span style="color: aliceblue;">80</span>
+          <span style="color: aliceblue;">90</span>
+          <span style="color: aliceblue;">100</span>
+        </div>
+      </div>
+    <div class="card-actions justify-center">
+      <button class="btn btn-outline" style="color: aliceblue;">Q109.99 c/u<br>Click Para Comprar</button>
+    </div>
+    </div>
+</div>
+<div class="card card-compact bg-base-100 w-96 shadow-xl" style="margin: 9px 960px; border: 1px solid gray;">
+  <figure>
+  <img style="margin-top: 15px; width: 78%; height: 225px; object-fit: cover;"
+      width="225px"
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2QiMUg1fz5wXqN7HVr7rhqVn3XgD6LvOOug&s"
+      alt="Bicicleta Spinning" />
+  </figure>
+  <div class="card-body">
+    <h2 class="card-title justify-center" style="color: aliceblue;">Mancuernas de Goma</h2>
+    <h3 class="card-title justify-center" style="color: aliceblue; font-family: 'Courier New', Courier, monospace;">100</h3>
+    <div class="card-actions justify-center">
+      <input type="range" min="0" max="100" value="1" step="10" class="range range-xs [--range-shdw:aqua]" />
+      <div class="flex w-full justify-between px-2 text-md" style="margin-left: 1px;">
+        <span style="color: aliceblue;">|</span>
+        <div class="flex w-full justify-between px-1 text-md" style="margin-left: 21px;">
+          <span style="margin-left: 1px;" style="color: aliceblue;">|</span>
+          <span style="color: aliceblue;">|</span>
+          <span style="color: aliceblue;">|</span>
+          <span style="color: aliceblue;">|</span>
+          <span style="color: aliceblue;">|</span>
+          <span style="color: aliceblue;">|</span>
+          <span style="color: aliceblue;">|</span>
+          <span style="color: aliceblue;">|</span>
+          <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+          <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+        </div>
+        </div>
+      <div class="flex w-full justify-between px-2 text-ms">
+        <span style="color: aliceblue;">1</span>
+        <span style="color: aliceblue;">10</span>
+        <span style="color: aliceblue;">20</span>
+        <span style="color: aliceblue;">30</span>
+        <span style="color: aliceblue;">40</span>
+        <span style="color: aliceblue;">50</span>
+        <span style="color: aliceblue;">60</span>
+        <span style="color: aliceblue;">70</span>
+        <span style="color: aliceblue;">80</span>
+        <span style="color: aliceblue;">90</span>
+        <span style="color: aliceblue;">100</span>
+      </div>
+    </div>
+  <div class="card-actions justify-center">
+    <button class="btn btn-outline" style="color: aliceblue;">Q99.99 c/u<br>Click Para Comprar</button>
+  </div>
+  </div>
+</div>
+</div>
+
+
+<div class="card card-compact bg-base-100 w-96 shadow-xl" style="margin: 65px 20px 10px 20px; border: 1px solid gray;">
+  <figure>
+  <img style="margin-top: 15px; width: 65%; height: 225px; object-fit: cover;"
+      src="https://www.proiron.pe/cdn/shop/products/mancuernas-de-neopreno-par-proiron-peru-mancuerna-363723.jpg?crop=center&height=300&v=1710498786&width=300"
+      alt="Bicicleta Spinning" />
+  </figure>
+  <div class="card-body">
+    <h2 class="card-title justify-center" style="color: aliceblue;">Mancuernas Neopreno (10 Unidades)</h2>
+    <h3 class="card-title justify-center" style="color: aliceblue; font-family: 'Courier New', Courier, monospace;">100</h3>
+  <div class="card-actions justify-center">
+    <input type="range" min="0" max="100" value="1" step="10" class="range range-xs [--range-shdw:aqua]" />
+    <div class="flex w-full justify-between px-2 text-md" style="margin-left: 1px;">
+      <span style="color: aliceblue;">|</span>
+      <div class="flex w-full justify-between px-1 text-md" style="margin-left: 21px;">
+        <span style="margin-left: 1px;" style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+        <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+      </div>
+      </div>
+    <div class="flex w-full justify-between px-2 text-ms">
+      <span style="color: aliceblue;">1</span>
+      <span style="color: aliceblue;">10</span>
+      <span style="color: aliceblue;">20</span>
+      <span style="color: aliceblue;">30</span>
+      <span style="color: aliceblue;">40</span>
+      <span style="color: aliceblue;">50</span>
+      <span style="color: aliceblue;">60</span>
+      <span style="color: aliceblue;">70</span>
+      <span style="color: aliceblue;">80</span>
+      <span style="color: aliceblue;">90</span>
+      <span style="color: aliceblue;">100</span>
+    </div>
+  </div>
+  <div class="card-actions justify-center">
+    <button class="btn btn-outline" style="color: aliceblue;">Q259.99 c/u<br>Click Para Comprar</button>
+  </div>
+  </div>
+</div>
+<div class="card card-compact bg-base-100 w-96 shadow-xl" style="margin: -490px auto; border: 1px solid gray;">
+<figure>
+<img style="margin-top: 15px; width: 65%; height: 225px; object-fit: cover;"
+    width="225px"
+    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8sPo9a3loQywx-aqOtx7sxGZdOBCzpI-Z5Q&s"
+    alt="pesas 20kg" />
+</figure>
+<div class="card-body">
+  <h2 class="card-title justify-center" style="color: aliceblue;">Mancuernas con Peso Variable</h2>
+  <h3 class="card-title justify-center" style="color: aliceblue; font-family: 'Courier New', Courier, monospace;">100</h3>
+  <div class="card-actions justify-center">
+    <input type="range" min="0" max="100" value="1" step="10" class="range range-xs [--range-shdw:aqua]" />
+    <div class="flex w-full justify-between px-2 text-md" style="margin-left: 1px;">
+      <span style="color: aliceblue;">|</span>
+      <div class="flex w-full justify-between px-1 text-md" style="margin-left: 21px;">
+        <span style="margin-left: 1px;" style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+        <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+      </div>
+      </div>
+    <div class="flex w-full justify-between px-2 text-ms">
+      <span style="color: aliceblue;">1</span>
+      <span style="color: aliceblue;">10</span>
+      <span style="color: aliceblue;">20</span>
+      <span style="color: aliceblue;">30</span>
+      <span style="color: aliceblue;">40</span>
+      <span style="color: aliceblue;">50</span>
+      <span style="color: aliceblue;">60</span>
+      <span style="color: aliceblue;">70</span>
+      <span style="color: aliceblue;">80</span>
+      <span style="color: aliceblue;">90</span>
+      <span style="color: aliceblue;">100</span>
+    </div>
+  </div>
+<div class="card-actions justify-center">
+  <button class="btn btn-outline" style="color: aliceblue;">Q159.99 c/u<br>Click Para Comprar</button>
+</div>
+</div>
+</div>
+<div class="card card-compact bg-base-100 w-96 shadow-xl" style="margin: 9px 960px; border: 1px solid gray;">
+<figure>
+<img style="margin-top: 15px; width: 65%; height: 225px; object-fit: cover;"
+  width="225px"
+  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjvcMahuwgagx1KTyJRg5r9v7SZ-lQ_GBz6A&s"
+  alt="Bicicleta Spinning" />
+</figure>
+<div class="card-body">
+<h2 class="card-title justify-center" style="color: aliceblue;">Mancuernas de Vinilo (6 Unidades)</h2>
+<h3 class="card-title justify-center" style="color: aliceblue; font-family: 'Courier New', Courier, monospace;">100</h3>
+<div class="card-actions justify-center">
+  <input type="range" min="0" max="100" value="1" step="10" class="range range-xs [--range-shdw:aqua]" />
+  <div class="flex w-full justify-between px-2 text-md" style="margin-left: 1px;">
+    <span style="color: aliceblue;">|</span>
+    <div class="flex w-full justify-between px-1 text-md" style="margin-left: 21px;">
+      <span style="margin-left: 1px;" style="color: aliceblue;">|</span>
+      <span style="color: aliceblue;">|</span>
+      <span style="color: aliceblue;">|</span>
+      <span style="color: aliceblue;">|</span>
+      <span style="color: aliceblue;">|</span>
+      <span style="color: aliceblue;">|</span>
+      <span style="color: aliceblue;">|</span>
+      <span style="color: aliceblue;">|</span>
+      <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+      <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+    </div>
+    </div>
+  <div class="flex w-full justify-between px-2 text-ms">
+    <span style="color: aliceblue;">1</span>
+    <span style="color: aliceblue;">10</span>
+    <span style="color: aliceblue;">20</span>
+    <span style="color: aliceblue;">30</span>
+    <span style="color: aliceblue;">40</span>
+    <span style="color: aliceblue;">50</span>
+    <span style="color: aliceblue;">60</span>
+    <span style="color: aliceblue;">70</span>
+    <span style="color: aliceblue;">80</span>
+    <span style="color: aliceblue;">90</span>
+    <span style="color: aliceblue;">100</span>
+  </div>
+</div>
+<div class="card-actions justify-center">
+<button class="btn btn-outline" style="color: aliceblue;">Q119.99 c/u<br>Click Para Comprar</button>
+</div>
+</div>
+</div>
+
+
+<div class="card card-compact bg-base-100 w-96 shadow-xl" style="margin: 65px 20px 10px 20px; border: 1px solid gray;">
+  <figure>
+  <img style="margin-top: 15px; width: 65%; height: 225px; object-fit: cover;"
+      src="https://m.media-amazon.com/images/I/716JvkfGhUL._AC_UF894,1000_QL80_.jpg"
+      alt="Bicicleta Spinning" />
+  </figure>
+  <div class="card-body">
+    <h2 class="card-title justify-center" style="color: aliceblue;">Kit Mancuernas Ajustables con Perilla</h2>
+    <h3 class="card-title justify-center" style="color: aliceblue; font-family: 'Courier New', Courier, monospace;">100</h3>
+  <div class="card-actions justify-center">
+    <input type="range" min="0" max="100" value="1" step="10" class="range range-xs [--range-shdw:aqua]" />
+    <div class="flex w-full justify-between px-2 text-md" style="margin-left: 1px;">
+      <span style="color: aliceblue;">|</span>
+      <div class="flex w-full justify-between px-1 text-md" style="margin-left: 21px;">
+        <span style="margin-left: 1px;" style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+        <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+      </div>
+      </div>
+    <div class="flex w-full justify-between px-2 text-ms">
+      <span style="color: aliceblue;">1</span>
+      <span style="color: aliceblue;">10</span>
+      <span style="color: aliceblue;">20</span>
+      <span style="color: aliceblue;">30</span>
+      <span style="color: aliceblue;">40</span>
+      <span style="color: aliceblue;">50</span>
+      <span style="color: aliceblue;">60</span>
+      <span style="color: aliceblue;">70</span>
+      <span style="color: aliceblue;">80</span>
+      <span style="color: aliceblue;">90</span>
+      <span style="color: aliceblue;">100</span>
+    </div>
+  </div>
+  <div class="card-actions justify-center">
+    <button class="btn btn-outline" style="color: aliceblue;">189.99 c/u<br>Click Para Comprar</button>
+  </div>
+  </div>
+</div>
+<div class="card card-compact bg-base-100 w-96 shadow-xl" style="margin: -490px auto; border: 1px solid gray;">
+<figure>
+<img style="margin-top: 15px; width: 65%; height: 225px; object-fit: cover;"
+    width="225px"
+    src="https://http2.mlstatic.com/D_916643-MLA70418335277_072023-C.jpg"
+    alt="pesas 20kg" />
+</figure>
+<div class="card-body">
+  <h2 class="card-title justify-center" style="color: aliceblue;">Kit Mancuernas de Agarre Anatomico</h2>
+  <h3 class="card-title justify-center" style="color: aliceblue; font-family: 'Courier New', Courier, monospace;">100</h3>
+  <div class="card-actions justify-center">
+    <input type="range" min="0" max="100" value="1" step="10" class="range range-xs [--range-shdw:aqua]" />
+    <div class="flex w-full justify-between px-2 text-md" style="margin-left: 1px;">
+      <span style="color: aliceblue;">|</span>
+      <div class="flex w-full justify-between px-1 text-md" style="margin-left: 21px;">
+        <span style="margin-left: 1px;" style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+        <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+      </div>
+      </div>
+    <div class="flex w-full justify-between px-2 text-ms">
+      <span style="color: aliceblue;">1</span>
+      <span style="color: aliceblue;">10</span>
+      <span style="color: aliceblue;">20</span>
+      <span style="color: aliceblue;">30</span>
+      <span style="color: aliceblue;">40</span>
+      <span style="color: aliceblue;">50</span>
+      <span style="color: aliceblue;">60</span>
+      <span style="color: aliceblue;">70</span>
+      <span style="color: aliceblue;">80</span>
+      <span style="color: aliceblue;">90</span>
+      <span style="color: aliceblue;">100</span>
+    </div>
+  </div>
+<div class="card-actions justify-center">
+  <button class="btn btn-outline" style="color: aliceblue;">Q209.99 c/u<br>Click Para Comprar</button>
+</div>
+</div>
+</div>
+<div class="card card-compact bg-base-100 w-96 shadow-xl" style="margin: 9px 960px; border: 1px solid gray;">
+<figure>
+<img style="margin-top: 15px; width: 65%; height: 225px; object-fit: cover;"
+  width="225px"
+  src="https://m.media-amazon.com/images/I/61NSXszA+ZL._AC_SL1500_.jpg"
+  alt="Bicicleta Spinning" />
+</figure>
+<div class="card-body">
+<h2 class="card-title justify-center" style="color: aliceblue;">Mancuernas Acuaticas (4 Unidades)</h2>
+<h3 class="card-title justify-center" style="color: aliceblue; font-family: 'Courier New', Courier, monospace;">100</h3>
+<div class="card-actions justify-center">
+  <input type="range" min="0" max="100" value="1" step="10" class="range range-xs [--range-shdw:aqua]" />
+  <div class="flex w-full justify-between px-2 text-md" style="margin-left: 1px;">
+    <span style="color: aliceblue;">|</span>
+    <div class="flex w-full justify-between px-1 text-md" style="margin-left: 21px;">
+      <span style="margin-left: 1px;" style="color: aliceblue;">|</span>
+      <span style="color: aliceblue;">|</span>
+      <span style="color: aliceblue;">|</span>
+      <span style="color: aliceblue;">|</span>
+      <span style="color: aliceblue;">|</span>
+      <span style="color: aliceblue;">|</span>
+      <span style="color: aliceblue;">|</span>
+      <span style="color: aliceblue;">|</span>
+      <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+      <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+    </div>
+    </div>
+  <div class="flex w-full justify-between px-2 text-ms">
+    <span style="color: aliceblue;">1</span>
+    <span style="color: aliceblue;">10</span>
+    <span style="color: aliceblue;">20</span>
+    <span style="color: aliceblue;">30</span>
+    <span style="color: aliceblue;">40</span>
+    <span style="color: aliceblue;">50</span>
+    <span style="color: aliceblue;">60</span>
+    <span style="color: aliceblue;">70</span>
+    <span style="color: aliceblue;">80</span>
+    <span style="color: aliceblue;">90</span>
+    <span style="color: aliceblue;">100</span>
+  </div>
+</div>
+<div class="card-actions justify-center">
+<button class="btn btn-outline" style="color: aliceblue;">Q99.99 c/u<br>Click Para Comprar</button>
+</div>
+</div>
+</div>
+
+
+<div class="card card-compact bg-base-100 w-96 shadow-xl" style="margin: 65px 20px 10px 20px; border: 1px solid gray;">
+  <figure>
+  <img style="margin-top: 15px; width: 65%; height: 225px; object-fit: cover;"
+      src="https://m.media-amazon.com/images/I/71NadggQz7L.jpg"
+      alt="Bicicleta Spinning" />
+  </figure>
+  <div class="card-body">
+    <h2 class="card-title justify-center" style="color: aliceblue;">Mancuernas de Bola (12 Unidades)</h2>
+    <h3 class="card-title justify-center" style="color: aliceblue; font-family: 'Courier New', Courier, monospace;">100</h3>
+  <div class="card-actions justify-center">
+    <input type="range" min="0" max="100" value="1" step="10" class="range range-xs [--range-shdw:aqua]" />
+    <div class="flex w-full justify-between px-2 text-md" style="margin-left: 1px;">
+      <span style="color: aliceblue;">|</span>
+      <div class="flex w-full justify-between px-1 text-md" style="margin-left: 21px;">
+        <span style="margin-left: 1px;" style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+        <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+      </div>
+      </div>
+    <div class="flex w-full justify-between px-2 text-ms">
+      <span style="color: aliceblue;">1</span>
+      <span style="color: aliceblue;">10</span>
+      <span style="color: aliceblue;">20</span>
+      <span style="color: aliceblue;">30</span>
+      <span style="color: aliceblue;">40</span>
+      <span style="color: aliceblue;">50</span>
+      <span style="color: aliceblue;">60</span>
+      <span style="color: aliceblue;">70</span>
+      <span style="color: aliceblue;">80</span>
+      <span style="color: aliceblue;">90</span>
+      <span style="color: aliceblue;">100</span>
+    </div>
+  </div>
+  <div class="card-actions justify-center">
+    <button class="btn btn-outline" style="color: aliceblue;">Q159.99 c/u<br>Click Para Comprar</button>
+  </div>
+  </div>
+</div>
+<div class="card card-compact bg-base-100 w-96 shadow-xl" style="margin: -490px auto; border: 1px solid gray;">
+<figure>
+<img style="margin-top: 15px; width: 65%; height: 225px; object-fit: cover;"
+    width="225px"
+    src="https://http2.mlstatic.com/D_NQ_NP_654288-MCO49451823156_032022-O.webp"
+    alt="pesas 20kg" />
+</figure>
+<div class="card-body">
+  <h2 class="card-title justify-center" style="color: aliceblue;">Kit Mancuernas Ergonomico</h2>
+  <h3 class="card-title justify-center" style="color: aliceblue; font-family: 'Courier New', Courier, monospace;">100</h3>
+  <div class="card-actions justify-center">
+    <input type="range" min="0" max="100" value="1" step="10" class="range range-xs [--range-shdw:aqua]" />
+    <div class="flex w-full justify-between px-2 text-md" style="margin-left: 1px;">
+      <span style="color: aliceblue;">|</span>
+      <div class="flex w-full justify-between px-1 text-md" style="margin-left: 21px;">
+        <span style="margin-left: 1px;" style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+        <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+      </div>
+      </div>
+    <div class="flex w-full justify-between px-2 text-ms">
+      <span style="color: aliceblue;">1</span>
+      <span style="color: aliceblue;">10</span>
+      <span style="color: aliceblue;">20</span>
+      <span style="color: aliceblue;">30</span>
+      <span style="color: aliceblue;">40</span>
+      <span style="color: aliceblue;">50</span>
+      <span style="color: aliceblue;">60</span>
+      <span style="color: aliceblue;">70</span>
+      <span style="color: aliceblue;">80</span>
+      <span style="color: aliceblue;">90</span>
+      <span style="color: aliceblue;">100</span>
+    </div>
+  </div>
+<div class="card-actions justify-center">
+  <button class="btn btn-outline" style="color: aliceblue;">Q79.99 c/u<br>Click Para Comprar</button>
+</div>
+</div>
+</div>
+<div class="card card-compact bg-base-100 w-96 shadow-xl" style="margin: 9px 960px; border: 1px solid gray;">
+<figure>
+<img style="margin-top: 15px; width: 65%; height: 225px; object-fit: cover;"
+  width="225px"
+  src="https://http2.mlstatic.com/D_NQ_NP_736558-MLA78024811518_082024-O.webp"
+  alt="Bicicleta Spinning" />
+</figure>
+<div class="card-body">
+<h2 class="card-title justify-center" style="color: aliceblue;">Mancuernas Elastica</h2>
+<h3 class="card-title justify-center" style="color: aliceblue; font-family: 'Courier New', Courier, monospace;">100</h3>
+<div class="card-actions justify-center">
+  <input type="range" min="0" max="100" value="1" step="10" class="range range-xs [--range-shdw:aqua]" />
+  <div class="flex w-full justify-between px-2 text-md" style="margin-left: 1px;">
+    <span style="color: aliceblue;">|</span>
+    <div class="flex w-full justify-between px-1 text-md" style="margin-left: 21px;">
+      <span style="margin-left: 1px;" style="color: aliceblue;">|</span>
+      <span style="color: aliceblue;">|</span>
+      <span style="color: aliceblue;">|</span>
+      <span style="color: aliceblue;">|</span>
+      <span style="color: aliceblue;">|</span>
+      <span style="color: aliceblue;">|</span>
+      <span style="color: aliceblue;">|</span>
+      <span style="color: aliceblue;">|</span>
+      <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+      <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+    </div>
+    </div>
+  <div class="flex w-full justify-between px-2 text-ms">
+    <span style="color: aliceblue;">1</span>
+    <span style="color: aliceblue;">10</span>
+    <span style="color: aliceblue;">20</span>
+    <span style="color: aliceblue;">30</span>
+    <span style="color: aliceblue;">40</span>
+    <span style="color: aliceblue;">50</span>
+    <span style="color: aliceblue;">60</span>
+    <span style="color: aliceblue;">70</span>
+    <span style="color: aliceblue;">80</span>
+    <span style="color: aliceblue;">90</span>
+    <span style="color: aliceblue;">100</span>
+  </div>
+</div>
+<div class="card-actions justify-center">
+<button class="btn btn-outline" style="color: aliceblue;">Q99.99 c/u<br>Click Para Comprar</button>
+</div>
+</div>
+</div>
+
+<div>
+  <div class="navbar bg-base-100">
+    <div class="navbar-start">
+      <div class="dropdown">
+        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h8m-8 6h16" />
+          </svg>
+        </div>
+      </div>
+      <div class="navbar-start">
+        <button class="join-item btn btn-outline text-xl" routerLink="" style="color: aliceblue;">Pagina anterior</button>
+      </div>
+    </div>
+    <a class="btn btn-ghost text-xl" routerLink="" style="color: aliceblue; font-style: oblique; margin-left: -100px;">Titanium Fitness</a>
+  </div>
+  <div style="text-align: center; margin-top: 20px; font-size: x-large; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: aliceblue;">PESAS</div>
+  <div class="card card-compact bg-base-100 w-96 shadow-xl" style="margin: 20px 20px 10px 20px; border: 1px solid gray;">
+      <figure>
+      <img style="margin-top: 15px; width: 65%; height: 225px; object-fit: cover;"
+          src="https://fitbarz.com.gt/wp-content/uploads/barra-olimpica-16kg.webp"
+          alt="Bicicleta Spinning" />
+      </figure>
+      <div class="card-body">
+        <h2 class="card-title justify-center" style="color: aliceblue;">Barra Olimpica</h2>
+        <h3 class="card-title justify-center" style="color: aliceblue; font-family: 'Courier New', Courier, monospace;">100</h3>
+      <div class="card-actions justify-center">
+        <input type="range" min="0" max="100" value="1" step="10" class="range range-xs [--range-shdw:aqua]" />
+        <div class="flex w-full justify-between px-2 text-md" style="margin-left: 1px;">
+          <span style="color: aliceblue;">|</span>
+          <div class="flex w-full justify-between px-1 text-md" style="margin-left: 21px;">
+            <span style="margin-left: 1px;" style="color: aliceblue;">|</span>
+            <span style="color: aliceblue;">|</span>
+            <span style="color: aliceblue;">|</span>
+            <span style="color: aliceblue;">|</span>
+            <span style="color: aliceblue;">|</span>
+            <span style="color: aliceblue;">|</span>
+            <span style="color: aliceblue;">|</span>
+            <span style="color: aliceblue;">|</span>
+            <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+            <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+          </div>
+          </div>
+        <div class="flex w-full justify-between px-2 text-ms">
+          <span style="color: aliceblue;">1</span>
+          <span style="color: aliceblue;">10</span>
+          <span style="color: aliceblue;">20</span>
+          <span style="color: aliceblue;">30</span>
+          <span style="color: aliceblue;">40</span>
+          <span style="color: aliceblue;">50</span>
+          <span style="color: aliceblue;">60</span>
+          <span style="color: aliceblue;">70</span>
+          <span style="color: aliceblue;">80</span>
+          <span style="color: aliceblue;">90</span>
+          <span style="color: aliceblue;">100</span>
+        </div>
+      </div>
+      <div class="card-actions justify-center">
+        <button class="btn btn-outline" style="color: aliceblue;">Q1,109.99 c/u<br>Click Para Comprar</button>
+      </div>
+      </div>
+  </div>
+  <div class="card card-compact bg-base-100 w-96 shadow-xl" style="margin: -490px auto; border: 1px solid gray;">
+    <figure>
+    <img style="margin-top: 15px; width: 65%; height: 225px; object-fit: cover;"
+        width="225px"
+        src="https://yorkbarbell.com/wp-content/uploads/2017/01/Kettlebell-Group.jpg"
+        alt="pesas 20kg" />
+    </figure>
+    <div class="card-body">
+      <h2 class="card-title justify-center" style="color: aliceblue;">Kettlebell (6 unidades)</h2>
+      <h3 class="card-title justify-center" style="color: aliceblue; font-family: 'Courier New', Courier, monospace;">100</h3>
+      <div class="card-actions justify-center">
+        <input type="range" min="0" max="100" value="1" step="10" class="range range-xs [--range-shdw:aqua]" />
+        <div class="flex w-full justify-between px-2 text-md" style="margin-left: 1px;">
+          <span style="color: aliceblue;">|</span>
+          <div class="flex w-full justify-between px-1 text-md" style="margin-left: 21px;">
+            <span style="margin-left: 1px;" style="color: aliceblue;">|</span>
+            <span style="color: aliceblue;">|</span>
+            <span style="color: aliceblue;">|</span>
+            <span style="color: aliceblue;">|</span>
+            <span style="color: aliceblue;">|</span>
+            <span style="color: aliceblue;">|</span>
+            <span style="color: aliceblue;">|</span>
+            <span style="color: aliceblue;">|</span>
+            <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+            <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+          </div>
+          </div>
+        <div class="flex w-full justify-between px-2 text-ms">
+          <span style="color: aliceblue;">1</span>
+          <span style="color: aliceblue;">10</span>
+          <span style="color: aliceblue;">20</span>
+          <span style="color: aliceblue;">30</span>
+          <span style="color: aliceblue;">40</span>
+          <span style="color: aliceblue;">50</span>
+          <span style="color: aliceblue;">60</span>
+          <span style="color: aliceblue;">70</span>
+          <span style="color: aliceblue;">80</span>
+          <span style="color: aliceblue;">90</span>
+          <span style="color: aliceblue;">100</span>
+        </div>
+      </div>
+    <div class="card-actions justify-center">
+      <button class="btn btn-outline" style="color: aliceblue;">Q959.99 c/u<br>Click Para Comprar</button>
+    </div>
+    </div>
+</div>
+<div class="card card-compact bg-base-100 w-96 shadow-xl" style="margin: 9px 960px; border: 1px solid gray;">
+  <figure>
+  <img style="margin-top: 15px; width: 78%; height: 225px; object-fit: cover;"
+      width="225px"
+      src="https://fiteq.com.gt/wp-content/uploads/2021/01/discoshierro1.jpg"
+      alt="Bicicleta Spinning" />
+  </figure>
+  <div class="card-body">
+    <h2 class="card-title justify-center" style="color: aliceblue;">Discos de Pesas (6 unidades)</h2>
+    <h3 class="card-title justify-center" style="color: aliceblue; font-family: 'Courier New', Courier, monospace;">100</h3>
+    <div class="card-actions justify-center">
+      <input type="range" min="0" max="100" value="1" step="10" class="range range-xs [--range-shdw:aqua]" />
+      <div class="flex w-full justify-between px-2 text-md" style="margin-left: 1px;">
+        <span style="color: aliceblue;">|</span>
+        <div class="flex w-full justify-between px-1 text-md" style="margin-left: 21px;">
+          <span style="margin-left: 1px;" style="color: aliceblue;">|</span>
+          <span style="color: aliceblue;">|</span>
+          <span style="color: aliceblue;">|</span>
+          <span style="color: aliceblue;">|</span>
+          <span style="color: aliceblue;">|</span>
+          <span style="color: aliceblue;">|</span>
+          <span style="color: aliceblue;">|</span>
+          <span style="color: aliceblue;">|</span>
+          <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+          <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+        </div>
+        </div>
+      <div class="flex w-full justify-between px-2 text-ms">
+        <span style="color: aliceblue;">1</span>
+        <span style="color: aliceblue;">10</span>
+        <span style="color: aliceblue;">20</span>
+        <span style="color: aliceblue;">30</span>
+        <span style="color: aliceblue;">40</span>
+        <span style="color: aliceblue;">50</span>
+        <span style="color: aliceblue;">60</span>
+        <span style="color: aliceblue;">70</span>
+        <span style="color: aliceblue;">80</span>
+        <span style="color: aliceblue;">90</span>
+        <span style="color: aliceblue;">100</span>
+      </div>
+    </div>
+  <div class="card-actions justify-center">
+    <button class="btn btn-outline" style="color: aliceblue;">Q1,099.99 c/u<br>Click Para Comprar</button>
+  </div>
+  </div>
+</div>
+</div>
+
+
+<div class="card card-compact bg-base-100 w-96 shadow-xl" style="margin: 65px 20px 10px 20px; border: 1px solid gray;">
+  <figure>
+  <img style="margin-top: 15px; width: 65%; height: 225px; object-fit: cover;"
+      src="https://m.media-amazon.com/images/I/91OA4d6FSpL.jpg"
+      alt="Bicicleta Spinning" />
+  </figure>
+  <div class="card-body">
+    <h2 class="card-title justify-center" style="color: aliceblue;">Pesas Rusas (8 unidades)</h2>
+    <h3 class="card-title justify-center" style="color: aliceblue; font-family: 'Courier New', Courier, monospace;">100</h3>
+  <div class="card-actions justify-center">
+    <input type="range" min="0" max="100" value="1" step="10" class="range range-xs [--range-shdw:aqua]" />
+    <div class="flex w-full justify-between px-2 text-md" style="margin-left: 1px;">
+      <span style="color: aliceblue;">|</span>
+      <div class="flex w-full justify-between px-1 text-md" style="margin-left: 21px;">
+        <span style="margin-left: 1px;" style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+        <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+      </div>
+      </div>
+    <div class="flex w-full justify-between px-2 text-ms">
+      <span style="color: aliceblue;">1</span>
+      <span style="color: aliceblue;">10</span>
+      <span style="color: aliceblue;">20</span>
+      <span style="color: aliceblue;">30</span>
+      <span style="color: aliceblue;">40</span>
+      <span style="color: aliceblue;">50</span>
+      <span style="color: aliceblue;">60</span>
+      <span style="color: aliceblue;">70</span>
+      <span style="color: aliceblue;">80</span>
+      <span style="color: aliceblue;">90</span>
+      <span style="color: aliceblue;">100</span>
+    </div>
+  </div>
+  <div class="card-actions justify-center">
+    <button class="btn btn-outline" style="color: aliceblue;">Q659.99 c/u<br>Click Para Comprar</button>
+  </div>
+  </div>
+</div>
+<div class="card card-compact bg-base-100 w-96 shadow-xl" style="margin: -490px auto; border: 1px solid gray;">
+<figure>
+<img style="margin-top: 15px; width: 65%; height: 225px; object-fit: cover;"
+    width="225px"
+    src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT5Ek53WFB89vNJ6TP7Hu1oYNXKXx_AC0QQtFGMkZvy3Bu9eMR1"
+    alt="pesas 20kg" />
+</figure>
+<div class="card-body">
+  <h2 class="card-title justify-center" style="color: aliceblue;">Pesas para Tobillos (6 unidades)</h2>
+  <h3 class="card-title justify-center" style="color: aliceblue; font-family: 'Courier New', Courier, monospace;">100</h3>
+  <div class="card-actions justify-center">
+    <input type="range" min="0" max="100" value="1" step="10" class="range range-xs [--range-shdw:aqua]" />
+    <div class="flex w-full justify-between px-2 text-md" style="margin-left: 1px;">
+      <span style="color: aliceblue;">|</span>
+      <div class="flex w-full justify-between px-1 text-md" style="margin-left: 21px;">
+        <span style="margin-left: 1px;" style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+        <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+      </div>
+      </div>
+    <div class="flex w-full justify-between px-2 text-ms">
+      <span style="color: aliceblue;">1</span>
+      <span style="color: aliceblue;">10</span>
+      <span style="color: aliceblue;">20</span>
+      <span style="color: aliceblue;">30</span>
+      <span style="color: aliceblue;">40</span>
+      <span style="color: aliceblue;">50</span>
+      <span style="color: aliceblue;">60</span>
+      <span style="color: aliceblue;">70</span>
+      <span style="color: aliceblue;">80</span>
+      <span style="color: aliceblue;">90</span>
+      <span style="color: aliceblue;">100</span>
+    </div>
+  </div>
+<div class="card-actions justify-center">
+  <button class="btn btn-outline" style="color: aliceblue;">Q209.99 c/u<br>Click Para Comprar</button>
+</div>
+</div>
+</div>
+<div class="card card-compact bg-base-100 w-96 shadow-xl" style="margin: 9px 960px; border: 1px solid gray;">
+<figure>
+<img style="margin-top: 15px; width: 65%; height: 225px; object-fit: cover;"
+  width="225px"
+  src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT5Ek53WFB89vNJ6TP7Hu1oYNXKXx_AC0QQtFGMkZvy3Bu9eMR1"
+  alt="Bicicleta Spinning" />
+</figure>
+<div class="card-body">
+<h2 class="card-title justify-center" style="color: aliceblue;">Pesas para Muñecas (6 unidades)</h2>
+<h3 class="card-title justify-center" style="color: aliceblue; font-family: 'Courier New', Courier, monospace;">100</h3>
+<div class="card-actions justify-center">
+  <input type="range" min="0" max="100" value="1" step="10" class="range range-xs [--range-shdw:aqua]" />
+  <div class="flex w-full justify-between px-2 text-md" style="margin-left: 1px;">
+    <span style="color: aliceblue;">|</span>
+    <div class="flex w-full justify-between px-1 text-md" style="margin-left: 21px;">
+      <span style="margin-left: 1px;" style="color: aliceblue;">|</span>
+      <span style="color: aliceblue;">|</span>
+      <span style="color: aliceblue;">|</span>
+      <span style="color: aliceblue;">|</span>
+      <span style="color: aliceblue;">|</span>
+      <span style="color: aliceblue;">|</span>
+      <span style="color: aliceblue;">|</span>
+      <span style="color: aliceblue;">|</span>
+      <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+      <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+    </div>
+    </div>
+  <div class="flex w-full justify-between px-2 text-ms">
+    <span style="color: aliceblue;">1</span>
+    <span style="color: aliceblue;">10</span>
+    <span style="color: aliceblue;">20</span>
+    <span style="color: aliceblue;">30</span>
+    <span style="color: aliceblue;">40</span>
+    <span style="color: aliceblue;">50</span>
+    <span style="color: aliceblue;">60</span>
+    <span style="color: aliceblue;">70</span>
+    <span style="color: aliceblue;">80</span>
+    <span style="color: aliceblue;">90</span>
+    <span style="color: aliceblue;">100</span>
+  </div>
+</div>
+<div class="card-actions justify-center">
+<button class="btn btn-outline" style="color: aliceblue;">Q209.99 c/u<br>Click Para Comprar</button>
+</div>
+</div>
+</div>
+
+
+<div class="card card-compact bg-base-100 w-96 shadow-xl" style="margin: 65px 20px 10px 20px; border: 1px solid gray;">
+  <figure>
+  <img style="margin-top: 15px; width: 65%; height: 225px; object-fit: cover;"
+      src="https://images.ctfassets.net/ipjoepkmtnha/2hqUQXeE3CzE4SO6S1vUzx/b42f714a0503e2597cc5a0774bf8075f/trap_bar_businessuse_new.jpg"
+      alt="Bicicleta Spinning" />
+  </figure>
+  <div class="card-body">
+    <h2 class="card-title justify-center" style="color: aliceblue;">Barras Hexagonales</h2>
+    <h3 class="card-title justify-center" style="color: aliceblue; font-family: 'Courier New', Courier, monospace;">100</h3>
+  <div class="card-actions justify-center">
+    <input type="range" min="0" max="100" value="1" step="10" class="range range-xs [--range-shdw:aqua]" />
+    <div class="flex w-full justify-between px-2 text-md" style="margin-left: 1px;">
+      <span style="color: aliceblue;">|</span>
+      <div class="flex w-full justify-between px-1 text-md" style="margin-left: 21px;">
+        <span style="margin-left: 1px;" style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+        <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+      </div>
+      </div>
+    <div class="flex w-full justify-between px-2 text-ms">
+      <span style="color: aliceblue;">1</span>
+      <span style="color: aliceblue;">10</span>
+      <span style="color: aliceblue;">20</span>
+      <span style="color: aliceblue;">30</span>
+      <span style="color: aliceblue;">40</span>
+      <span style="color: aliceblue;">50</span>
+      <span style="color: aliceblue;">60</span>
+      <span style="color: aliceblue;">70</span>
+      <span style="color: aliceblue;">80</span>
+      <span style="color: aliceblue;">90</span>
+      <span style="color: aliceblue;">100</span>
+    </div>
+  </div>
+  <div class="card-actions justify-center">
+    <button class="btn btn-outline" style="color: aliceblue;">219.99 c/u<br>Click Para Comprar</button>
+  </div>
+  </div>
+</div>
+<div class="card card-compact bg-base-100 w-96 shadow-xl" style="margin: -490px auto; border: 1px solid gray;">
+<figure>
+<img style="margin-top: 15px; width: 65%; height: 225px; object-fit: cover;"
+    width="225px"
+    src="https://cdn.etenonfitness.com/assets/products/105327/105327%20-%20AFW%20Trineo%20de%20arrastre%201-large.jpg"
+    alt="pesas 20kg" />
+</figure>
+<div class="card-body">
+  <h2 class="card-title justify-center" style="color: aliceblue;">Plataformas de Pesas</h2>
+  <h3 class="card-title justify-center" style="color: aliceblue; font-family: 'Courier New', Courier, monospace;">100</h3>
+  <div class="card-actions justify-center">
+    <input type="range" min="0" max="100" value="1" step="10" class="range range-xs [--range-shdw:aqua]" />
+    <div class="flex w-full justify-between px-2 text-md" style="margin-left: 1px;">
+      <span style="color: aliceblue;">|</span>
+      <div class="flex w-full justify-between px-1 text-md" style="margin-left: 21px;">
+        <span style="margin-left: 1px;" style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+        <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+      </div>
+      </div>
+    <div class="flex w-full justify-between px-2 text-ms">
+      <span style="color: aliceblue;">1</span>
+      <span style="color: aliceblue;">10</span>
+      <span style="color: aliceblue;">20</span>
+      <span style="color: aliceblue;">30</span>
+      <span style="color: aliceblue;">40</span>
+      <span style="color: aliceblue;">50</span>
+      <span style="color: aliceblue;">60</span>
+      <span style="color: aliceblue;">70</span>
+      <span style="color: aliceblue;">80</span>
+      <span style="color: aliceblue;">90</span>
+      <span style="color: aliceblue;">100</span>
+    </div>
+  </div>
+<div class="card-actions justify-center">
+  <button class="btn btn-outline" style="color: aliceblue;">Q259.99 c/u<br>Click Para Comprar</button>
+</div>
+</div>
+</div>
+<div class="card card-compact bg-base-100 w-96 shadow-xl" style="margin: 9px 960px; border: 1px solid gray;">
+<figure>
+<img style="margin-top: 15px; width: 65%; height: 225px; object-fit: cover;"
+  width="225px"
+  src="https://jbs-fitness.es/wp-content/uploads/2020/07/Barra-Olimpica-Curl-Z50-mm-120-csd-450x450.jpg"
+  alt="Bicicleta Spinning" />
+</figure>
+<div class="card-body">
+<h2 class="card-title justify-center" style="color: aliceblue;">Barras Z o Barras Curl</h2>
+<h3 class="card-title justify-center" style="color: aliceblue; font-family: 'Courier New', Courier, monospace;">100</h3>
+<div class="card-actions justify-center">
+  <input type="range" min="0" max="100" value="1" step="10" class="range range-xs [--range-shdw:aqua]" />
+  <div class="flex w-full justify-between px-2 text-md" style="margin-left: 1px;">
+    <span style="color: aliceblue;">|</span>
+    <div class="flex w-full justify-between px-1 text-md" style="margin-left: 21px;">
+      <span style="margin-left: 1px;" style="color: aliceblue;">|</span>
+      <span style="color: aliceblue;">|</span>
+      <span style="color: aliceblue;">|</span>
+      <span style="color: aliceblue;">|</span>
+      <span style="color: aliceblue;">|</span>
+      <span style="color: aliceblue;">|</span>
+      <span style="color: aliceblue;">|</span>
+      <span style="color: aliceblue;">|</span>
+      <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+      <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+    </div>
+    </div>
+  <div class="flex w-full justify-between px-2 text-ms">
+    <span style="color: aliceblue;">1</span>
+    <span style="color: aliceblue;">10</span>
+    <span style="color: aliceblue;">20</span>
+    <span style="color: aliceblue;">30</span>
+    <span style="color: aliceblue;">40</span>
+    <span style="color: aliceblue;">50</span>
+    <span style="color: aliceblue;">60</span>
+    <span style="color: aliceblue;">70</span>
+    <span style="color: aliceblue;">80</span>
+    <span style="color: aliceblue;">90</span>
+    <span style="color: aliceblue;">100</span>
+  </div>
+</div>
+<div class="card-actions justify-center">
+<button class="btn btn-outline" style="color: aliceblue;">Q199.99 c/u<br>Click Para Comprar</button>
+</div>
+</div>
+</div>
+
+
+<div class="card card-compact bg-base-100 w-96 shadow-xl" style="margin: 65px 20px 10px 20px; border: 1px solid gray;">
+  <figure>
+  <img style="margin-top: 15px; width: 65%; height: 225px; object-fit: cover;"
+      src="https://byomedicsystem.com/wp-content/uploads/2022/05/5kg10kg15kg20kg25kg_filled_wei_1598950732_e618872e_progressive.jpg"
+      alt="Bicicleta Spinning" />
+  </figure>
+  <div class="card-body">
+    <h2 class="card-title justify-center" style="color: aliceblue;">Power Bags (5 unidades)</h2>
+    <h3 class="card-title justify-center" style="color: aliceblue; font-family: 'Courier New', Courier, monospace;">100</h3>
+  <div class="card-actions justify-center">
+    <input type="range" min="0" max="100" value="1" step="10" class="range range-xs [--range-shdw:aqua]" />
+    <div class="flex w-full justify-between px-2 text-md" style="margin-left: 1px;">
+      <span style="color: aliceblue;">|</span>
+      <div class="flex w-full justify-between px-1 text-md" style="margin-left: 21px;">
+        <span style="margin-left: 1px;" style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+        <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+      </div>
+      </div>
+    <div class="flex w-full justify-between px-2 text-ms">
+      <span style="color: aliceblue;">1</span>
+      <span style="color: aliceblue;">10</span>
+      <span style="color: aliceblue;">20</span>
+      <span style="color: aliceblue;">30</span>
+      <span style="color: aliceblue;">40</span>
+      <span style="color: aliceblue;">50</span>
+      <span style="color: aliceblue;">60</span>
+      <span style="color: aliceblue;">70</span>
+      <span style="color: aliceblue;">80</span>
+      <span style="color: aliceblue;">90</span>
+      <span style="color: aliceblue;">100</span>
+    </div>
+  </div>
+  <div class="card-actions justify-center">
+    <button class="btn btn-outline" style="color: aliceblue;">Q449.99 c/u<br>Click Para Comprar</button>
+  </div>
+  </div>
+</div>
+<div class="card card-compact bg-base-100 w-96 shadow-xl" style="margin: -490px auto; border: 1px solid gray;">
+<figure>
+<img style="margin-top: 15px; width: 65%; height: 225px; object-fit: cover;"
+    width="225px"
+    src="https://www.aerobicyfitness.com/75712-medium_default/cadenas-de-levantamiento-o-live.jpg"
+    alt="pesas 20kg" />
+</figure>
+<div class="card-body">
+  <h2 class="card-title justify-center" style="color: aliceblue;">Cadenas (2 unidades)</h2>
+  <h3 class="card-title justify-center" style="color: aliceblue; font-family: 'Courier New', Courier, monospace;">100</h3>
+  <div class="card-actions justify-center">
+    <input type="range" min="0" max="100" value="1" step="10" class="range range-xs [--range-shdw:aqua]" />
+    <div class="flex w-full justify-between px-2 text-md" style="margin-left: 1px;">
+      <span style="color: aliceblue;">|</span>
+      <div class="flex w-full justify-between px-1 text-md" style="margin-left: 21px;">
+        <span style="margin-left: 1px;" style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+        <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+      </div>
+      </div>
+    <div class="flex w-full justify-between px-2 text-ms">
+      <span style="color: aliceblue;">1</span>
+      <span style="color: aliceblue;">10</span>
+      <span style="color: aliceblue;">20</span>
+      <span style="color: aliceblue;">30</span>
+      <span style="color: aliceblue;">40</span>
+      <span style="color: aliceblue;">50</span>
+      <span style="color: aliceblue;">60</span>
+      <span style="color: aliceblue;">70</span>
+      <span style="color: aliceblue;">80</span>
+      <span style="color: aliceblue;">90</span>
+      <span style="color: aliceblue;">100</span>
+    </div>
+  </div>
+<div class="card-actions justify-center">
+  <button class="btn btn-outline" style="color: aliceblue;">Q99.99 c/u<br>Click Para Comprar</button>
+</div>
+</div>
+</div>
+<div class="card card-compact bg-base-100 w-96 shadow-xl" style="margin: 9px 960px; border: 1px solid gray;">
+<figure>
+<img style="margin-top: 15px; width: 65%; height: 225px; object-fit: cover;"
+  width="225px"
+  src="https://m.media-amazon.com/images/I/81cJjmIfhSL._AC_UF894,1000_QL80_.jpg"
+  alt="Bicicleta Spinning" />
+</figure>
+<div class="card-body">
+<h2 class="card-title justify-center" style="color: aliceblue;">Bolas de Estabilidad (6 unidades)</h2>
+<h3 class="card-title justify-center" style="color: aliceblue; font-family: 'Courier New', Courier, monospace;">100</h3>
+<div class="card-actions justify-center">
+  <input type="range" min="0" max="100" value="1" step="10" class="range range-xs [--range-shdw:aqua]" />
+  <div class="flex w-full justify-between px-2 text-md" style="margin-left: 1px;">
+    <span style="color: aliceblue;">|</span>
+    <div class="flex w-full justify-between px-1 text-md" style="margin-left: 21px;">
+      <span style="margin-left: 1px;" style="color: aliceblue;">|</span>
+      <span style="color: aliceblue;">|</span>
+      <span style="color: aliceblue;">|</span>
+      <span style="color: aliceblue;">|</span>
+      <span style="color: aliceblue;">|</span>
+      <span style="color: aliceblue;">|</span>
+      <span style="color: aliceblue;">|</span>
+      <span style="color: aliceblue;">|</span>
+      <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+      <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+    </div>
+    </div>
+  <div class="flex w-full justify-between px-2 text-ms">
+    <span style="color: aliceblue;">1</span>
+    <span style="color: aliceblue;">10</span>
+    <span style="color: aliceblue;">20</span>
+    <span style="color: aliceblue;">30</span>
+    <span style="color: aliceblue;">40</span>
+    <span style="color: aliceblue;">50</span>
+    <span style="color: aliceblue;">60</span>
+    <span style="color: aliceblue;">70</span>
+    <span style="color: aliceblue;">80</span>
+    <span style="color: aliceblue;">90</span>
+    <span style="color: aliceblue;">100</span>
+  </div>
+</div>
+<div class="card-actions justify-center">
+<button class="btn btn-outline" style="color: aliceblue;">Q299.99 c/u<br>Click Para Comprar</button>
+</div>
+</div>
+</div>
+
+<div>
+  <div class="navbar bg-base-100">
+    <div class="navbar-start">
+      <div class="dropdown">
+        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h8m-8 6h16" />
+          </svg>
+        </div>
+      </div>
+      <div class="navbar-start">
+        <button class="join-item btn btn-outline text-xl" routerLink="" style="color: aliceblue;">Pagina anterior</button>
+      </div>
+    </div>
+    <a class="btn btn-ghost text-xl" routerLink="" style="color: aliceblue; font-style: oblique; margin-left: -100px;">Titanium Fitness</a>
+  </div>
+  <div style="text-align: center; margin-top: 20px; font-size: x-large; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: aliceblue;">MAQUINAS</div>
+  <div class="card card-compact bg-base-100 w-96 shadow-xl" style="margin: 20px 20px 10px 20px; border: 1px solid gray;">
+      <figure>
+      <img style="margin-top: 15px; width: 65%; height: 225px; object-fit: cover;"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZStGEVpM6M3dP5QV23yKk83vxbGAyG3TXiA&s"
+          alt="Bicicleta Spinning" />
+      </figure>
+      <div class="card-body">
+        <h2 class="card-title justify-center" style="color: aliceblue;">Bicicleta Estatica</h2>
+        <h3 class="card-title justify-center" style="color: aliceblue; font-family: 'Courier New', Courier, monospace;">100</h3>
+      <div class="card-actions justify-center">
+        <input type="range" min="0" max="100" value="1" step="10" class="range range-xs [--range-shdw:aqua]" />
+        <div class="flex w-full justify-between px-2 text-md" style="margin-left: 1px;">
+          <span style="color: aliceblue;">|</span>
+          <div class="flex w-full justify-between px-1 text-md" style="margin-left: 21px;">
+            <span style="margin-left: 1px;" style="color: aliceblue;">|</span>
+            <span style="color: aliceblue;">|</span>
+            <span style="color: aliceblue;">|</span>
+            <span style="color: aliceblue;">|</span>
+            <span style="color: aliceblue;">|</span>
+            <span style="color: aliceblue;">|</span>
+            <span style="color: aliceblue;">|</span>
+            <span style="color: aliceblue;">|</span>
+            <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+            <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+          </div>
+          </div>
+        <div class="flex w-full justify-between px-2 text-ms">
+          <span style="color: aliceblue;">1</span>
+          <span style="color: aliceblue;">10</span>
+          <span style="color: aliceblue;">20</span>
+          <span style="color: aliceblue;">30</span>
+          <span style="color: aliceblue;">40</span>
+          <span style="color: aliceblue;">50</span>
+          <span style="color: aliceblue;">60</span>
+          <span style="color: aliceblue;">70</span>
+          <span style="color: aliceblue;">80</span>
+          <span style="color: aliceblue;">90</span>
+          <span style="color: aliceblue;">100</span>
+        </div>
+      </div>
+      <div class="card-actions justify-center">
+        <button class="btn btn-outline" style="color: aliceblue;">Q21,999.99 c/u<br>Click Para Comprar</button>
+      </div>
+      </div>
+  </div>
+  <div class="card card-compact bg-base-100 w-96 shadow-xl" style="margin: -490px auto; border: 1px solid gray;">
+    <figure>
+    <img style="margin-top: 15px; width: 65%; height: 225px; object-fit: cover;"
+        width="225px"
+        src="https://tienda.gfitness.com.ar/web/image/product.template/3986/image_256/%5BX8400A%5D%20Cinta%20Caminadora%20Modelo%20X8400A?unique=063c632"
+        alt="pesas 20kg" />
+    </figure>
+    <div class="card-body">
+      <h2 class="card-title justify-center" style="color: aliceblue;">Trotadora o Cinta de Correr</h2>
+      <h3 class="card-title justify-center" style="color: aliceblue; font-family: 'Courier New', Courier, monospace;">100</h3>
+      <div class="card-actions justify-center">
+        <input type="range" min="0" max="100" value="1" step="10" class="range range-xs [--range-shdw:aqua]" />
+        <div class="flex w-full justify-between px-2 text-md" style="margin-left: 1px;">
+          <span style="color: aliceblue;">|</span>
+          <div class="flex w-full justify-between px-1 text-md" style="margin-left: 21px;">
+            <span style="margin-left: 1px;" style="color: aliceblue;">|</span>
+            <span style="color: aliceblue;">|</span>
+            <span style="color: aliceblue;">|</span>
+            <span style="color: aliceblue;">|</span>
+            <span style="color: aliceblue;">|</span>
+            <span style="color: aliceblue;">|</span>
+            <span style="color: aliceblue;">|</span>
+            <span style="color: aliceblue;">|</span>
+            <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+            <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+          </div>
+          </div>
+        <div class="flex w-full justify-between px-2 text-ms">
+          <span style="color: aliceblue;">1</span>
+          <span style="color: aliceblue;">10</span>
+          <span style="color: aliceblue;">20</span>
+          <span style="color: aliceblue;">30</span>
+          <span style="color: aliceblue;">40</span>
+          <span style="color: aliceblue;">50</span>
+          <span style="color: aliceblue;">60</span>
+          <span style="color: aliceblue;">70</span>
+          <span style="color: aliceblue;">80</span>
+          <span style="color: aliceblue;">90</span>
+          <span style="color: aliceblue;">100</span>
+        </div>
+      </div>
+    <div class="card-actions justify-center">
+      <button class="btn btn-outline" style="color: aliceblue;">Q33.999.99 c/u<br>Click Para Comprar</button>
+    </div>
+    </div>
+</div>
+<div class="card card-compact bg-base-100 w-96 shadow-xl" style="margin: 9px 960px; border: 1px solid gray;">
+  <figure>
+  <img style="margin-top: 15px; width: 65%; height: 225px; object-fit: cover;"
+      width="225px"
+      src="https://media.doitcenter.com.pa/media/catalog/product/2/8/288sfellicombo1_2rfbj0ajlbfj9f8d.jpg?quality=85&fit=bounds&height=&width=256&auto=webp&format=pjpg"
+      alt="Bicicleta Spinning" />
+  </figure>
+  <div class="card-body">
+    <h2 class="card-title justify-center" style="color: aliceblue;">Bicicleta Eliptica</h2>
+    <h3 class="card-title justify-center" style="color: aliceblue; font-family: 'Courier New', Courier, monospace;">100</h3>
+    <div class="card-actions justify-center">
+      <input type="range" min="0" max="100" value="1" step="10" class="range range-xs [--range-shdw:aqua]" />
+      <div class="flex w-full justify-between px-2 text-md" style="margin-left: 1px;">
+        <span style="color: aliceblue;">|</span>
+        <div class="flex w-full justify-between px-1 text-md" style="margin-left: 21px;">
+          <span style="margin-left: 1px;" style="color: aliceblue;">|</span>
+          <span style="color: aliceblue;">|</span>
+          <span style="color: aliceblue;">|</span>
+          <span style="color: aliceblue;">|</span>
+          <span style="color: aliceblue;">|</span>
+          <span style="color: aliceblue;">|</span>
+          <span style="color: aliceblue;">|</span>
+          <span style="color: aliceblue;">|</span>
+          <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+          <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+        </div>
+        </div>
+      <div class="flex w-full justify-between px-2 text-ms">
+        <span style="color: aliceblue;">1</span>
+        <span style="color: aliceblue;">10</span>
+        <span style="color: aliceblue;">20</span>
+        <span style="color: aliceblue;">30</span>
+        <span style="color: aliceblue;">40</span>
+        <span style="color: aliceblue;">50</span>
+        <span style="color: aliceblue;">60</span>
+        <span style="color: aliceblue;">70</span>
+        <span style="color: aliceblue;">80</span>
+        <span style="color: aliceblue;">90</span>
+        <span style="color: aliceblue;">100</span>
+      </div>
+    </div>
+  <div class="card-actions justify-center">
+    <button class="btn btn-outline" style="color: aliceblue;">Q13,999.99 c/u<br>Click Para Comprar</button>
+  </div>
+  </div>
+</div>
+</div>
+
+
+<div class="card card-compact bg-base-100 w-96 shadow-xl" style="margin: 65px 20px 10px 20px; border: 1px solid gray;">
+  <figure>
+  <img style="margin-top: 15px; width: 65%; height: 225px; object-fit: cover;"
+      src="https://www.getstepr.es/media/catalog/product/cache/6ae2dcf5a7ae3b5886606fd3cbee5bc4/s/t/stepr_white_bg.jpg"
+      alt="Bicicleta Spinning" />
+  </figure>
+  <div class="card-body">
+    <h2 class="card-title justify-center" style="color: aliceblue;">Escaladora</h2>
+    <h3 class="card-title justify-center" style="color: aliceblue; font-family: 'Courier New', Courier, monospace;">100</h3>
+  <div class="card-actions justify-center">
+    <input type="range" min="0" max="100" value="1" step="10" class="range range-xs [--range-shdw:aqua]" />
+    <div class="flex w-full justify-between px-2 text-md" style="margin-left: 1px;">
+      <span style="color: aliceblue;">|</span>
+      <div class="flex w-full justify-between px-1 text-md" style="margin-left: 21px;">
+        <span style="margin-left: 1px;" style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+        <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+      </div>
+      </div>
+    <div class="flex w-full justify-between px-2 text-ms">
+      <span style="color: aliceblue;">1</span>
+      <span style="color: aliceblue;">10</span>
+      <span style="color: aliceblue;">20</span>
+      <span style="color: aliceblue;">30</span>
+      <span style="color: aliceblue;">40</span>
+      <span style="color: aliceblue;">50</span>
+      <span style="color: aliceblue;">60</span>
+      <span style="color: aliceblue;">70</span>
+      <span style="color: aliceblue;">80</span>
+      <span style="color: aliceblue;">90</span>
+      <span style="color: aliceblue;">100</span>
+    </div>
+  </div>
+  <div class="card-actions justify-center">
+    <button class="btn btn-outline" style="color: aliceblue;">Q32,999.99 c/u<br>Click Para Comprar</button>
+  </div>
+  </div>
+</div>
+<div class="card card-compact bg-base-100 w-96 shadow-xl" style="margin: -490px auto; border: 1px solid gray;">
+<figure>
+<img style="margin-top: 15px; width: 65%; height: 225px; object-fit: cover;"
+    width="225px"
+    src="https://fitness.com.gt/wp-content/uploads/2023/01/Banco-Olimpico-Declinado-Pro-Lycan-1.jpg"
+    alt="pesas 20kg" />
+</figure>
+<div class="card-body">
+  <h2 class="card-title justify-center" style="color: aliceblue;">Banco Olimpico</h2>
+  <h3 class="card-title justify-center" style="color: aliceblue; font-family: 'Courier New', Courier, monospace;">100</h3>
+  <div class="card-actions justify-center">
+    <input type="range" min="0" max="100" value="1" step="10" class="range range-xs [--range-shdw:aqua]" />
+    <div class="flex w-full justify-between px-2 text-md" style="margin-left: 1px;">
+      <span style="color: aliceblue;">|</span>
+      <div class="flex w-full justify-between px-1 text-md" style="margin-left: 21px;">
+        <span style="margin-left: 1px;" style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+        <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+      </div>
+      </div>
+    <div class="flex w-full justify-between px-2 text-ms">
+      <span style="color: aliceblue;">1</span>
+      <span style="color: aliceblue;">10</span>
+      <span style="color: aliceblue;">20</span>
+      <span style="color: aliceblue;">30</span>
+      <span style="color: aliceblue;">40</span>
+      <span style="color: aliceblue;">50</span>
+      <span style="color: aliceblue;">60</span>
+      <span style="color: aliceblue;">70</span>
+      <span style="color: aliceblue;">80</span>
+      <span style="color: aliceblue;">90</span>
+      <span style="color: aliceblue;">100</span>
+    </div>
+  </div>
+<div class="card-actions justify-center">
+  <button class="btn btn-outline" style="color: aliceblue;">Q12.999.99 c/u<br>Click Para Comprar</button>
+</div>
+</div>
+</div>
+<div class="card card-compact bg-base-100 w-96 shadow-xl" style="margin: 9px 960px; border: 1px solid gray;">
+<figure>
+<img style="margin-top: 15px; width: 65%; height: 225px; object-fit: cover;"
+  width="225px"
+  src="https://sears.com.gt/wp-content/uploads/imgSears/305650.jpg"
+  alt="Bicicleta Spinning" />
+</figure>
+<div class="card-body">
+<h2 class="card-title justify-center" style="color: aliceblue;"> Banco de Abdominales</h2>
+<h3 class="card-title justify-center" style="color: aliceblue; font-family: 'Courier New', Courier, monospace;">100</h3>
+<div class="card-actions justify-center">
+  <input type="range" min="0" max="100" value="1" step="10" class="range range-xs [--range-shdw:aqua]" />
+  <div class="flex w-full justify-between px-2 text-md" style="margin-left: 1px;">
+    <span style="color: aliceblue;">|</span>
+    <div class="flex w-full justify-between px-1 text-md" style="margin-left: 21px;">
+      <span style="margin-left: 1px;" style="color: aliceblue;">|</span>
+      <span style="color: aliceblue;">|</span>
+      <span style="color: aliceblue;">|</span>
+      <span style="color: aliceblue;">|</span>
+      <span style="color: aliceblue;">|</span>
+      <span style="color: aliceblue;">|</span>
+      <span style="color: aliceblue;">|</span>
+      <span style="color: aliceblue;">|</span>
+      <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+      <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+    </div>
+    </div>
+  <div class="flex w-full justify-between px-2 text-ms">
+    <span style="color: aliceblue;">1</span>
+    <span style="color: aliceblue;">10</span>
+    <span style="color: aliceblue;">20</span>
+    <span style="color: aliceblue;">30</span>
+    <span style="color: aliceblue;">40</span>
+    <span style="color: aliceblue;">50</span>
+    <span style="color: aliceblue;">60</span>
+    <span style="color: aliceblue;">70</span>
+    <span style="color: aliceblue;">80</span>
+    <span style="color: aliceblue;">90</span>
+    <span style="color: aliceblue;">100</span>
+  </div>
+</div>
+<div class="card-actions justify-center">
+<button class="btn btn-outline" style="color: aliceblue;">Q10,999.99 c/u<br>Click Para Comprar</button>
+</div>
+</div>
+</div>
+
+
+<div class="card card-compact bg-base-100 w-96 shadow-xl" style="margin: 65px 20px 10px 20px; border: 1px solid gray;">
+  <figure>
+  <img style="margin-top: 15px; width: 65%; height: 225px; object-fit: cover;"
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToOwyuaQ6iEk8Wki3MsSoolKUoFd-FFOsdWg&s"
+      alt="Bicicleta Spinning" />
+  </figure>
+  <div class="card-body">
+    <h2 class="card-title justify-center" style="color: aliceblue;">Maquina de Poleas</h2>
+    <h3 class="card-title justify-center" style="color: aliceblue; font-family: 'Courier New', Courier, monospace;">100</h3>
+  <div class="card-actions justify-center">
+    <input type="range" min="0" max="100" value="1" step="10" class="range range-xs [--range-shdw:aqua]" />
+    <div class="flex w-full justify-between px-2 text-md" style="margin-left: 1px;">
+      <span style="color: aliceblue;">|</span>
+      <div class="flex w-full justify-between px-1 text-md" style="margin-left: 21px;">
+        <span style="margin-left: 1px;" style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+        <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+      </div>
+      </div>
+    <div class="flex w-full justify-between px-2 text-ms">
+      <span style="color: aliceblue;">1</span>
+      <span style="color: aliceblue;">10</span>
+      <span style="color: aliceblue;">20</span>
+      <span style="color: aliceblue;">30</span>
+      <span style="color: aliceblue;">40</span>
+      <span style="color: aliceblue;">50</span>
+      <span style="color: aliceblue;">60</span>
+      <span style="color: aliceblue;">70</span>
+      <span style="color: aliceblue;">80</span>
+      <span style="color: aliceblue;">90</span>
+      <span style="color: aliceblue;">100</span>
+    </div>
+  </div>
+  <div class="card-actions justify-center">
+    <button class="btn btn-outline" style="color: aliceblue;">Q37,999.99 c/u<br>Click Para Comprar</button>
+  </div>
+  </div>
+</div>
+<div class="card card-compact bg-base-100 w-96 shadow-xl" style="margin: -490px auto; border: 1px solid gray;">
+<figure>
+<img style="margin-top: 15px; width: 65%; height: 225px; object-fit: cover;"
+    width="225px"
+    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEi82HpqCnRO6AlnNmk9EFQ-SUhgL9RyGe9K5-asAAuwti9l1f0MoszitgQ3bewi_8cwQ&usqp=CAU"
+    alt="pesas 20kg" />
+</figure>
+<div class="card-body">
+  <h2 class="card-title justify-center" style="color: aliceblue;">Remo</h2>
+  <h3 class="card-title justify-center" style="color: aliceblue; font-family: 'Courier New', Courier, monospace;">100</h3>
+  <div class="card-actions justify-center">
+    <input type="range" min="0" max="100" value="1" step="10" class="range range-xs [--range-shdw:aqua]" />
+    <div class="flex w-full justify-between px-2 text-md" style="margin-left: 1px;">
+      <span style="color: aliceblue;">|</span>
+      <div class="flex w-full justify-between px-1 text-md" style="margin-left: 21px;">
+        <span style="margin-left: 1px;" style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+        <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+      </div>
+      </div>
+    <div class="flex w-full justify-between px-2 text-ms">
+      <span style="color: aliceblue;">1</span>
+      <span style="color: aliceblue;">10</span>
+      <span style="color: aliceblue;">20</span>
+      <span style="color: aliceblue;">30</span>
+      <span style="color: aliceblue;">40</span>
+      <span style="color: aliceblue;">50</span>
+      <span style="color: aliceblue;">60</span>
+      <span style="color: aliceblue;">70</span>
+      <span style="color: aliceblue;">80</span>
+      <span style="color: aliceblue;">90</span>
+      <span style="color: aliceblue;">100</span>
+    </div>
+  </div>
+<div class="card-actions justify-center">
+  <button class="btn btn-outline" style="color: aliceblue;">Q7.999.99 c/u<br>Click Para Comprar</button>
+</div>
+</div>
+</div>
+<div class="card card-compact bg-base-100 w-96 shadow-xl" style="margin: 9px 960px; border: 1px solid gray;">
+<figure>
+<img style="margin-top: 15px; width: 65%; height: 225px; object-fit: cover;"
+  width="225px"
+  src="https://sears.com.gt/wp-content/uploads/imgSears/354982.jpg"
+  alt="Bicicleta Spinning" />
+</figure>
+<div class="card-body">
+<h2 class="card-title justify-center" style="color: aliceblue;"> Bicicleta Estatica</h2>
+<h3 class="card-title justify-center" style="color: aliceblue; font-family: 'Courier New', Courier, monospace;">100</h3>
+<div class="card-actions justify-center">
+  <input type="range" min="0" max="100" value="1" step="10" class="range range-xs [--range-shdw:aqua]" />
+  <div class="flex w-full justify-between px-2 text-md" style="margin-left: 1px;">
+    <span style="color: aliceblue;">|</span>
+    <div class="flex w-full justify-between px-1 text-md" style="margin-left: 21px;">
+      <span style="margin-left: 1px;" style="color: aliceblue;">|</span>
+      <span style="color: aliceblue;">|</span>
+      <span style="color: aliceblue;">|</span>
+      <span style="color: aliceblue;">|</span>
+      <span style="color: aliceblue;">|</span>
+      <span style="color: aliceblue;">|</span>
+      <span style="color: aliceblue;">|</span>
+      <span style="color: aliceblue;">|</span>
+      <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+      <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+    </div>
+    </div>
+  <div class="flex w-full justify-between px-2 text-ms">
+    <span style="color: aliceblue;">1</span>
+    <span style="color: aliceblue;">10</span>
+    <span style="color: aliceblue;">20</span>
+    <span style="color: aliceblue;">30</span>
+    <span style="color: aliceblue;">40</span>
+    <span style="color: aliceblue;">50</span>
+    <span style="color: aliceblue;">60</span>
+    <span style="color: aliceblue;">70</span>
+    <span style="color: aliceblue;">80</span>
+    <span style="color: aliceblue;">90</span>
+    <span style="color: aliceblue;">100</span>
+  </div>
+</div>
+<div class="card-actions justify-center">
+<button class="btn btn-outline" style="color: aliceblue;">Q4,999.99 c/u<br>Click Para Comprar</button>
+</div>
+</div>
+</div>
+
+
+<div class="card card-compact bg-base-100 w-96 shadow-xl" style="margin: 65px 20px 10px 20px; border: 1px solid gray;">
+  <figure>
+  <img style="margin-top: 15px; width: 65%; height: 225px; object-fit: cover;"
+      src="https://www.equipamientosfox.com/wp-content/uploads/2022/03/linea-full_lingotes_dorsalera-alta.webp"
+      alt="Bicicleta Spinning" />
+  </figure>
+  <div class="card-body">
+    <h2 class="card-title justify-center" style="color: aliceblue;">Maquina Dorsaleta</h2>
+    <h3 class="card-title justify-center" style="color: aliceblue; font-family: 'Courier New', Courier, monospace;">100</h3>
+  <div class="card-actions justify-center">
+    <input type="range" min="0" max="100" value="1" step="10" class="range range-xs [--range-shdw:aqua]" />
+    <div class="flex w-full justify-between px-2 text-md" style="margin-left: 1px;">
+      <span style="color: aliceblue;">|</span>
+      <div class="flex w-full justify-between px-1 text-md" style="margin-left: 21px;">
+        <span style="margin-left: 1px;" style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+        <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+      </div>
+      </div>
+    <div class="flex w-full justify-between px-2 text-ms">
+      <span style="color: aliceblue;">1</span>
+      <span style="color: aliceblue;">10</span>
+      <span style="color: aliceblue;">20</span>
+      <span style="color: aliceblue;">30</span>
+      <span style="color: aliceblue;">40</span>
+      <span style="color: aliceblue;">50</span>
+      <span style="color: aliceblue;">60</span>
+      <span style="color: aliceblue;">70</span>
+      <span style="color: aliceblue;">80</span>
+      <span style="color: aliceblue;">90</span>
+      <span style="color: aliceblue;">100</span>
+    </div>
+  </div>
+  <div class="card-actions justify-center">
+    <button class="btn btn-outline" style="color: aliceblue;">Q17,999.99 c/u<br>Click Para Comprar</button>
+  </div>
+  </div>
+</div>
+<div class="card card-compact bg-base-100 w-96 shadow-xl" style="margin: -490px auto; border: 1px solid gray;">
+<figure>
+<img style="margin-top: 15px; width: 65%; height: 225px; object-fit: cover;"
+    width="225px"
+    src="https://jbs-fitness.es/wp-content/uploads/2020/07/Peck-Deck-abierta.jpg"
+    alt="pesas 20kg" />
+</figure>
+<div class="card-body">
+  <h2 class="card-title justify-center" style="color: aliceblue;">Peck Deck</h2>
+  <h3 class="card-title justify-center" style="color: aliceblue; font-family: 'Courier New', Courier, monospace;">100</h3>
+  <div class="card-actions justify-center">
+    <input type="range" min="0" max="100" value="1" step="10" class="range range-xs [--range-shdw:aqua]" />
+    <div class="flex w-full justify-between px-2 text-md" style="margin-left: 1px;">
+      <span style="color: aliceblue;">|</span>
+      <div class="flex w-full justify-between px-1 text-md" style="margin-left: 21px;">
+        <span style="margin-left: 1px;" style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="color: aliceblue;">|</span>
+        <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+        <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+      </div>
+      </div>
+    <div class="flex w-full justify-between px-2 text-ms">
+      <span style="color: aliceblue;">1</span>
+      <span style="color: aliceblue;">10</span>
+      <span style="color: aliceblue;">20</span>
+      <span style="color: aliceblue;">30</span>
+      <span style="color: aliceblue;">40</span>
+      <span style="color: aliceblue;">50</span>
+      <span style="color: aliceblue;">60</span>
+      <span style="color: aliceblue;">70</span>
+      <span style="color: aliceblue;">80</span>
+      <span style="color: aliceblue;">90</span>
+      <span style="color: aliceblue;">100</span>
+    </div>
+  </div>
+<div class="card-actions justify-center">
+  <button class="btn btn-outline" style="color: aliceblue;">Q18.999.99 c/u<br>Click Para Comprar</button>
+</div>
+</div>
+</div>
+<div class="card card-compact bg-base-100 w-96 shadow-xl" style="margin: 9px 960px; border: 1px solid gray;">
+<figure>
+<img style="margin-top: 15px; width: 65%; height: 225px; object-fit: cover;"
+  width="225px"
+  src="https://sportfitness.co/cdn/shop/files/071753_e8bfaa7b-2cd4-4caa-9221-1945cdfa3c54.jpg?v=1718634636"
+  alt="Bicicleta Spinning" />
+</figure>
+<div class="card-body">
+<h2 class="card-title justify-center" style="color: aliceblue;">Maquina de Aductor</h2>
+<h3 class="card-title justify-center" style="color: aliceblue; font-family: 'Courier New', Courier, monospace;">100</h3>
+<div class="card-actions justify-center">
+  <input type="range" min="0" max="100" value="1" step="10" class="range range-xs [--range-shdw:aqua]" />
+  <div class="flex w-full justify-between px-2 text-md" style="margin-left: 1px;">
+    <span style="color: aliceblue;">|</span>
+    <div class="flex w-full justify-between px-1 text-md" style="margin-left: 21px;">
+      <span style="margin-left: 1px;" style="color: aliceblue;">|</span>
+      <span style="color: aliceblue;">|</span>
+      <span style="color: aliceblue;">|</span>
+      <span style="color: aliceblue;">|</span>
+      <span style="color: aliceblue;">|</span>
+      <span style="color: aliceblue;">|</span>
+      <span style="color: aliceblue;">|</span>
+      <span style="color: aliceblue;">|</span>
+      <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+      <span style="margin-right: 5px;" style="color: aliceblue;">|</span>
+    </div>
+    </div>
+  <div class="flex w-full justify-between px-2 text-ms">
+    <span style="color: aliceblue;">1</span>
+    <span style="color: aliceblue;">10</span>
+    <span style="color: aliceblue;">20</span>
+    <span style="color: aliceblue;">30</span>
+    <span style="color: aliceblue;">40</span>
+    <span style="color: aliceblue;">50</span>
+    <span style="color: aliceblue;">60</span>
+    <span style="color: aliceblue;">70</span>
+    <span style="color: aliceblue;">80</span>
+    <span style="color: aliceblue;">90</span>
+    <span style="color: aliceblue;">100</span>
+  </div>
+</div>
+<div class="card-actions justify-center">
+<button class="btn btn-outline" style="color: aliceblue;">Q15.999.99 c/u<br>Click Para Comprar</button>
+</div>
+</div>
+</div>
+
+<div style="margin: 65px">
+</div>
