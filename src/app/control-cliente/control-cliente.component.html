@@ -27,11 +27,12 @@
     <table class="table" id="userTable" style="text-align: center;">
         <thead>
             <tr>
-                <th>Foto</th>
-                <th>Nombre</th>
-                <th>Apellido</th>
-                <th>Correo</th>
-                <th>Password</th>
+                <th style="color: aliceblue;">No.</th>
+                <th style="color: aliceblue;">Foto</th>
+                <th style="color: aliceblue;">Nombre</th>
+                <th style="color: aliceblue;">Apellido</th>
+                <th style="color: aliceblue;">Correo</th>
+                <th style="color: aliceblue;">Password</th>
             </tr>
         </thead>
         <tbody>
@@ -40,47 +41,3 @@
     </table>
   </div>
 </div>
-
-<script>
-    document.getElementById('userForm').addEventListener('submit', function (e) {
-        e.preventDefault(); // Previene que el formulario se envíe de manera convencional
-
-        // Obtener los valores del formulario
-        const name = document.getElementById('name').value;
-        const job = document.getElementById('job').value;
-        const color = document.getElementById('color').value;
-
-        // Crear una nueva fila en la tabla
-        const newRow = document.createElement('tr');
-        newRow.innerHTML = `
-            <td>
-                <div class="flex items-center gap-3">
-                    <div class="avatar">
-                        <div class="mask mask-squircle h-12 w-12">
-                            <img src="https://img.daisyui.com/images/profile/demo/1@94.webp" alt="Avatar Tailwind CSS Component" />
-                        </div>
-                    </div>
-                    <div>
-                        <div class="font-bold">${name}</div>
-                        <div class="text-sm opacity-50">Country</div> <!-- Cambiar según la necesidad -->
-                    </div>
-                </div>
-            </td>
-            <td>
-                ${job}
-                <br />
-                <span class="badge badge-ghost badge-sm">${job}</span>
-            </td>
-            <td>${color}</td>
-            <th>
-                <button class="btn btn-ghost btn-xs">details</button>
-            </th>
-        `;
-
-        // Añadir la nueva fila al cuerpo de la tabla
-        document.querySelector('#userTable tbody').appendChild(newRow);
-
-        // Limpiar el formulario
-        this.reset();
-    });
-</script>
